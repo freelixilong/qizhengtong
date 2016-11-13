@@ -11,6 +11,8 @@ from scrapy.spiders import Spider
 from scrapy.http import Request, XmlResponse
 from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
 from scrapy.utils.gz import gunzip, is_gzipped
+from scrapy.linkextractors import *
+from scrapy.utils.python import unique as unique_list
 
 logger = logging.getLogger(__name__)
 
@@ -23,16 +25,20 @@ class GovSpider(Spider):
     start_host = "http://www.bjpc.gov.cn/"
     filter_urls = []
     clawed_urls = []
-    def __init__(self, *a, **kw):
+    def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
+        date = "", *a, **kw):
         super(GovSpider, self).__init__(*a, **kw)
-        if kw != None:
-            if kw["deny"]:
-                self.deny = True  # the filter_urls is the deny to craw
-            else:
-                self.allow = False # the filter_urls is the allow to craw
-            self.filter_urls = kw["filter_urls"]
+        if deny != '':
+            self.deny = True  # the filter_urls is the deny to craw   
         else:
-            self.deny = True
+            self.allow = False # the filter_urls is the allow to craw
+        self.filter_urls = filter_urls
+
+        self.page_urls = []
+        self.condition = condition  #condtion应该为抓取符合条件的页面的xpath
+        self.titleX = title #查找的 页面title的xpath
+        self.contentX = content #查找的 页面content的xpath
+        self.dateX = date #查找的 页面上关键日期的xpath
 
     def parse(self, response):
         for sel in response.xpath('//ul/li'):
@@ -68,7 +74,7 @@ class GovSpider(Spider):
     def _parse_response(self, response):
         if response.url.endswith('/robots.txt'):
             for url in sitemap_urls_from_robots(response.text):
-                if not self._is_filter_url(url) and not url in self.clawed_urls:
+                if not self._is_filter_url(url) and not (url in self.clawed_urls):
                     yield Request(url, callback=self._parse_response)
                     self.clawed_urls.append(url)
         else:
@@ -78,18 +84,29 @@ class GovSpider(Spider):
                                {'response': response}, extra={'spider': self})
                 return
 
-            site_urls = []
-            for url in response.xpath('//a/@href').extract():
-                if not url.startwith("http://"):
-                    site_urls.append(self.start_host + url)
-                yield Request(url, self._parse_response)
-                yield self.get_item(response, url)
-                self.clawed_urls.append(url)
+            link_extractor = LxmlLinkExtractor(allow=[self.start_host], deny=(), allow_domains=(), deny_domains=(), restrict_xpaths=(),
+                 tags=('a', 'area'), attrs=('href',), canonicalize=True, unique=True, process_value=None, deny_extensions=None, restrict_css=())
+
+            site_urls = link_extractor.extract_links(response)
+            for link in site_urls:
+                if not link.url in self.clawed_urls
+                    yield Request(link.url, self._parse_response)
+                    if self.statisfy_craw(response): #符合条件就抓取该页面
+                        yield self.get_item(response, link.url)
+                    self.clawed_urls.append(link.url)
 
         #filename = response.url.split("/")[-2]
         #with open(filename, 'wb') as f:
         #    f.write(response.body)
     def get_item(self, response, url):
+        title = response.xpath(self.titleX)
+        content = response.xpath(self.contentX)
+        date = response.xpath(self.dateX)
+        return PageContentItem(title = title, content = content, date = date)
+    def satisfy_craw(response):
+        if response.xpath(self.condition) != "":
+            return True
+        return False
     	
     def _get_sitemap_body(self, response):
         """Return the sitemap body contained in the given response,
