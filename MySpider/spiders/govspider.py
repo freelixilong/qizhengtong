@@ -24,17 +24,20 @@ class GovSpider(Spider):
     start_host = "http://www.bjpc.gov.cn/"
     filter_urls = []
     clawed_urls = []
+    depart = ""
     #def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
     #    date = "", *a, **kw):
-    def __init__(self, url = 'bj', *a, **kw):
+    def __init__(self, depart = "site", url = 'bj', *a, **kw):
         super(GovSpider, self).__init__(*a, **kw)
         #if deny != '':
             #self.deny = True  # the filter_urls is the deny to craw   
         #else:
         #    self.allow = False # the filter_urls is the allow to craw
         #self.filter_urls = filter_urls
+        self.depart = depart
         fo = open("test.txt", "w")
-        fo.write( url )
+        fo.write(url)
+        fo.write(depart)
         fo.close()
         self.deny = True
         self.page_urls = []
@@ -107,10 +110,11 @@ class GovSpider(Spider):
         title = response.xpath(self.titleX)
         content = response.xpath(self.contentX)
         date = response.xpath(self.dateX)
+        depart = self.depart
         logger.warning('get_item title %s' % title)
         logger.warning('get_item content %s' % content)
         logger.warning('get_item date %s' % date)
-        return PageContentItem(title = title, content = content, date = date)
+        return PageContentItem(depart = depart,title = title, content = content, date = date)
     def satisfy_craw(self, response):
         if response.xpath(self.condition) != "":
             return True

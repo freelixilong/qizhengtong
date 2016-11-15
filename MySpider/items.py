@@ -10,6 +10,7 @@ import scrapy
 class PageContentItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    depart = scrapy.Field()
     title = scrapy.Field()
     link = scrapy.Field()
     content = scrapy.Field()
