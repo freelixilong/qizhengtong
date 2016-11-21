@@ -14,7 +14,7 @@ BOT_NAME = 'MySpider'
 SPIDER_MODULES = ['MySpider.spiders']
 NEWSPIDER_MODULE = 'MySpider.spiders'
 
-
+MYSERVER_URI = 'http://localhost'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'
 

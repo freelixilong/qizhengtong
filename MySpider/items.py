@@ -10,10 +10,13 @@ import scrapy
 class PageContentItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    depart = scrapy.Field()
-    title = scrapy.Field()
+    depart = scrapy.Field() #bu men, gov
+    section = scrapy.Field() # bankuai
+    category =  scrapy.Field() #fen lei, options
+    title = scrapy.Field() #
     link = scrapy.Field()
     content = scrapy.Field()
     date = scrapy.Field()
     desc = scrapy.Field()
-    category =  scrapy.Field()
+    append = scrapy.Field() #fujian mulu 
+    
