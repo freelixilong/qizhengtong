@@ -14,13 +14,15 @@ BOT_NAME = 'MySpider'
 SPIDER_MODULES = ['MySpider.spiders']
 NEWSPIDER_MODULE = 'MySpider.spiders'
 
-MYSERVER_URI = 'http://localhost'
+MYSERVER_URI = 'http://localhost:8000'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+MONGO_DATABASE = "test"
+MONGO_URI = "mongodb://localhost:27017/"
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -64,9 +66,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'MySpider.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'MySpider.pipelines.MyspiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

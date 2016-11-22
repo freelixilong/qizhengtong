@@ -7,7 +7,11 @@
 #import pymongo
 import requests
 import json
-
+import logging
+from scrapy.exceptions import DropItem
+import pdb
+logger = logging.getLogger(__name__)
+_DEBUG = True
 class MyspiderPipeline(object):
 
     def __init__(self, server_uri):
@@ -22,40 +26,46 @@ class MyspiderPipeline(object):
     def open_spider(self, spider):
         #self.client = pymongo.MongoClient(self.mongo_uri)
         #self.db = self.client[self.mongo_db]
+        pass
 
     def close_spider(self, spider):
         #self.client.close()
-    def getRestfulAPIData(item):
-    	url = self.server_uri + "/api/1.0"
-    	jsn = {}
-    	jsn.mkey = item.depart
-    	jsn.subKey = item.section
-    	jsn.action = "post"
-    	if item.title:
-    		data = {}
-    	    data.title = item.title
-    	    data.link = item.link
-    	    data.append = item.append
-    	    data.date = item.date
-    	    data.desc = item.desc
-            jsn.data = data
+        pass
 
-    	return (url, jsn)
+    def getRestfulAPIData(self, item):
+        url = self.server_uri + "/api/1.0"
+        jsn = {}
+
+        jsn["mkey"] = item["depart"]
+        jsn["subKey"] = "kej" #item["section"]
+        jsn["action"] = "post"
+        if item["title"]:
+            data = {}
+            data["title"] = item["title"]
+            data["link"] = item["link"]
+            data["append"] = item["append"]
+            data["date"] = item["date"]
+            data["desc"] = item["desc"]
+            jsn["data"]= data
+
+        return (url, jsn)
 
     def process_item(self, item, spider):
-		try:
-			headers = {'content-type': 'application/json',}
-			(url, jsn) = self.getRestfulAPIData(item)
-			r = requests.post(url, data = json.dump(jsn), headers = headers)  #will stuck here a little, need improving
-		except Exception, e:
-			raise DropItem("process_item the server(%s) response error" % self.server_uri)
-		else:
-			if r.status == '404':
+        try:
+            headers = {'content-type':'application/json'}
+            (url, jsn) = self.getRestfulAPIData(item)
+            logger.warning('process_item title %s' % item["title"])
+            #pdb.set_trace()
+            r = requests.post(url, data = json.dumps(jsn), headers = headers)  #will stuck here a little, need improving
+        except Exception, e:
+            raise DropItem("process_item the server(%s) response error" % self.server_uri)
+        else:
+            if r.status == '404' or r.status == '500':
                 raise DropItem("process_item the server(%s) response error" % self.server_uri)
-	        else:
+            else:
                 return item
-		finally:
-			pass
-	        
+        finally:
+            pass
+            
             
 

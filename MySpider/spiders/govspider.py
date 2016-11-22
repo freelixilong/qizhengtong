@@ -12,6 +12,7 @@ from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
 from scrapy.utils.gz import gunzip, is_gzipped
 from scrapy.linkextractors import LinkExtractor
 from scrapy.utils.python import unique as unique_list
+import pymongo
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +28,7 @@ class GovSpider(Spider):
     depart = ""
     #def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
     #    date = "", *a, **kw):
-    def __init__(self, depart = "site", url = 'bj', *a, **kw):
+    def __init__(self, depart = "site", *a, **kw):
         super(GovSpider, self).__init__(*a, **kw)
         #if deny != '':
             #self.deny = True  # the filter_urls is the deny to craw   
@@ -35,12 +36,21 @@ class GovSpider(Spider):
         #    self.allow = False # the filter_urls is the allow to craw
         #self.filter_urls = filter_urls
         self.depart = depart
-        fo = open("test.txt", "w")
-        fo.write(url)
-        fo.write(depart)
-        fo.close()
+        self.internal_err = False
         self.deny = True
         self.page_urls = []
+        try:
+            self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
+            self.db = self.client[self.settings.get('MONGO_DATABASE', 'test')] 
+            res = self.db["GovDeparment"].find_one({key:depart})
+            if res == None or count(res) == 0:
+                self.internal_err = True
+                return
+        except Exception, e:
+            logger.error("mongodb got errror: %s",self.settings.get('MONGO_URI'))
+            self.internal_err = True
+       
+        
         self.condition = "//div[@class='dbox container']"  #condtion应该为抓取符合条件的页面的xpath <div class="dbox container">
         self.titleX = '//*[@id="container"]/div[6]/h1' #查找的 页面title的xpath
         self.contentX = '//*[@id="container"]/div[6]/div[1]' #查找的 页面content的xpath
@@ -73,9 +83,14 @@ class GovSpider(Spider):
         self.start_host = host
 
     def start_requests(self):
+        if self.internal_err:
+            return
         for url in self.start_urls:
             yield Request(url, self._parse_response)
             self.clawed_urls.append(url)
+    def closed(self):
+        logger.warning('self mongo db closed')
+        self.client.close()
 
     def _parse_response(self, response):
         if response.url.endswith('/robots.txt'):
