@@ -50,11 +50,16 @@ class GovSpider(Spider):
             logger.error("mongodb got errror: %s",self.settings.get('MONGO_URI'))
             self.internal_err = True
        
-        
-        self.condition = "//div[@class='dbox container']"  #condtion应该为抓取符合条件的页面的xpath <div class="dbox container">
-        self.titleX = '//*[@id="container"]/div[6]/h1' #查找的 页面title的xpath
-        self.contentX = '//*[@id="container"]/div[6]/div[1]' #查找的 页面content的xpath
-        self.dateX = '//*[@id="container"]/div[6]/h2/span[2]' #查找的 页面上关键日期的xpath
+        self.condition = res["condition"]
+        #self.fields = res["fields"]
+        self.fields = {}
+        for k, v in res["fields"]:
+            self.fields[k] = v
+
+        #self.condition = "//div[@class='dbox container']"  #condtion应该为抓取符合条件的页面的xpath <div class="dbox container">
+        #self.titleX = '//*[@id="container"]/div[6]/h1' #查找的 页面title的xpath
+        #self.contentX = '//*[@id="container"]/div[6]/div[1]' #查找的 页面content的xpath
+        #self.dateX = '//*[@id="container"]/div[6]/h2/span[2]' #查找的 页面上关键日期的xpath
 
     def parse(self, response):
         for sel in response.xpath('//ul/li'):
