@@ -35,17 +35,18 @@ class MyspiderPipeline(object):
     def getRestfulAPIData(self, item):
         url = self.server_uri + "/api/1.0"
         jsn = {}
-
+        if item["depart"] == "" or item["section"] == "" or item["title"] == "" or item["link"] == "" or item["date"] == "":
+        	raise 
         jsn["mkey"] = item["depart"]
-        jsn["subKey"] = "kej" #item["section"]
-        jsn["action"] = "post"
+        jsn["subKey"] = item["section"]
+        #jsn["action"] = "post"
         if item["title"]:
             data = {}
             data["title"] = item["title"]
             data["link"] = item["link"]
-            data["append"] = item["append"]
             data["date"] = item["date"]
-            data["desc"] = item["desc"]
+            for k, v in item["optionFields"]:
+            	data[k] = v
             jsn["data"]= data
 
         return (url, jsn)

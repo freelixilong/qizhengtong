@@ -5,6 +5,7 @@ import six
 
 import scrapy
 from MySpider.items import PageContentItem 
+from MySpider.items import PageItemLoader 
 from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
 from scrapy.spiders import Spider
 from scrapy.http import Request, XmlResponse
@@ -12,19 +13,20 @@ from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
 from scrapy.utils.gz import gunzip, is_gzipped
 from scrapy.linkextractors import LinkExtractor
 from scrapy.utils.python import unique as unique_list
+from scrapy.exceptions import NotSupported
 import pymongo
+import pdb
 
 logger = logging.getLogger(__name__)
 
 class GovSpider(Spider):
     name = "GovSpider"
     allowed_domains = ["bjpc.gov.cn"]
-    start_urls = [
-        "http://www.bjpc.gov.cn/",
-    ]
+    start_urls = []
     start_host = "http://www.bjpc.gov.cn/"
     filter_urls = []
     clawed_urls = []
+    init_db = False
     depart = ""
     #def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
     #    date = "", *a, **kw):
@@ -36,38 +38,9 @@ class GovSpider(Spider):
         #    self.allow = False # the filter_urls is the allow to craw
         #self.filter_urls = filter_urls
         self.depart = depart
-        self.internal_err = False
+        self.internal_err = True
         self.deny = True
         self.page_urls = []
-        try:
-            self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
-            self.db = self.client[self.settings.get('MONGO_DATABASE', 'test')] 
-            res = self.db["GovDeparment"].find_one({key:depart})
-            if res == None or count(res) == 0:
-                self.internal_err = True
-                return
-        except Exception, e:
-            logger.error("mongodb got errror: %s",self.settings.get('MONGO_URI'))
-            self.internal_err = True
-       
-        self.condition = res["condition"]
-        #self.fields = res["fields"]
-        self.fields = {}
-        for k, v in res["fields"]:
-            self.fields[k] = v
-
-        #self.condition = "//div[@class='dbox container']"  #condtion应该为抓取符合条件的页面的xpath <div class="dbox container">
-        #self.titleX = '//*[@id="container"]/div[6]/h1' #查找的 页面title的xpath
-        #self.contentX = '//*[@id="container"]/div[6]/div[1]' #查找的 页面content的xpath
-        #self.dateX = '//*[@id="container"]/div[6]/h2/span[2]' #查找的 页面上关键日期的xpath
-
-    def parse(self, response):
-        for sel in response.xpath('//ul/li'):
-            item = DmozItem()
-            item['title'] = sel.xpath('a/text()').extract()
-            item['link'] = sel.xpath('a/@href').extract()
-            item['desc'] = sel.xpath('text()').extract()
-            yield item
 
     def _is_filter_url(self, url):
             if not url.startwith(self.start_host):
@@ -83,13 +56,37 @@ class GovSpider(Spider):
                         return False
                 return True
 
-    def set_start_urls(urls, host):
-        self.start_urls = urls
+    def set_start_urls(self, urls, host):
+        self.start_urls.add(urls)
         self.start_host = host
-
+        pdb.set_trace()
+    def initial_db(self):
+        try:
+            self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
+            self.db = self.client[self.settings.get('MONGO_DATABASE', 'test')] 
+            res = self.db.GovDepartment.find_one({"key":self.depart})
+            if res is None:
+                self.internal_err = True
+                raise NotSupported()
+                return
+        except Exception, e:
+            logger.error("mongodb got errror: %s",self.settings.get('MONGO_URI'))
+            self.internal_err = True
+        pdb.set_trace()
+        self.condition = res["condition"]
+        self.start_urls.append(res["link"])
+        #self.fields = res["fields"]
+        self.fields = {}
+        self.init_db = True
+        self.internal_err = False
+        for (k, v) in res["fields"].items():
+            self.fields[k] = v
     def start_requests(self):
+        if not self.init_db:
+            self.initial_db()
+
         if self.internal_err:
-            return
+            raise NotSupported()
         for url in self.start_urls:
             yield Request(url, self._parse_response)
             self.clawed_urls.append(url)
@@ -127,14 +124,15 @@ class GovSpider(Spider):
         #with open(filename, 'wb') as f:
         #    f.write(response.body)
     def get_item(self, response, url):
-        title = response.xpath(self.titleX)
-        content = response.xpath(self.contentX)
-        date = response.xpath(self.dateX)
-        depart = self.depart
-        logger.warning('get_item title %s' % title)
-        logger.warning('get_item content %s' % content)
-        logger.warning('get_item date %s' % date)
-        return PageContentItem(depart = depart,title = title, content = content, date = date)
+        il = PageItemLoader(item=PageContentItem(), response=response)
+        for (k, v) in self.fields.items():
+            if k == "link":
+                il.add_value('link', url)
+            else:
+                xpath = v["select"][0]["xpath"]
+                il.add_xpath(k, xpath) #only support simple select current
+
+        return il.load_item()
     def satisfy_craw(self, response):
         if response.xpath(self.condition) != "":
             return True
