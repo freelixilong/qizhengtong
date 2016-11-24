@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# code: UTF-8
 import re
 import logging
 import six
@@ -72,7 +72,7 @@ class GovSpider(Spider):
         except Exception, e:
             logger.error("mongodb got errror: %s",self.settings.get('MONGO_URI'))
             self.internal_err = True
-        pdb.set_trace()
+        #pdb.set_trace()
         self.condition = res["condition"]
         self.start_urls.append(res["link"])
         #self.fields = res["fields"]
@@ -115,15 +115,12 @@ class GovSpider(Spider):
             for link in site_urls:
                 logger.warning('_parse_response got lnk url %s' % link.url)
                 if not link.url in self.clawed_urls:
-                    yield Request(link.url, self._parse_response)
-                    if self.satisfy_craw(response): #符合条件就抓取该页面
-                        yield self.get_item(response, link.url)
                     self.clawed_urls.append(link.url)
-
-        #filename = response.url.split("/")[-2]
-        #with open(filename, 'wb') as f:
-        #    f.write(response.body)
+                    yield Request(link.url, self._parse_response)
+                    if self.satisfy_craw(response):
+                        yield self.get_item(response, link.url)
     def get_item(self, response, url):
+        #pdb.set_trace()
         il = PageItemLoader(item=PageContentItem(), response=response)
         for (k, v) in self.fields.items():
             if k == "link":

@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-
+# code: UTF-8
 # Scrapy settings for MySpider project
 #
 # For simplicity, this file contains only settings considered important or

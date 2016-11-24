@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# code: UTF-8
 
 # Define here the models for your scraped items
 #
@@ -8,6 +8,9 @@
 import scrapy
 from scrapy.loader import ItemLoader
 from scrapy.contrib.loader.processor import TakeFirst, MapCompose, Join
+import logging
+import pdb
+logger = logging.getLogger(__name__)
 
 class PageContentItem(scrapy.Item):
     # define the fields for your item here like:
@@ -22,15 +25,39 @@ class PageContentItem(scrapy.Item):
    
 class PageItemLoader(ItemLoader):
     def __init__(self, item=None, selector=None, response=None, parent=None, **context):
+
         super(PageItemLoader, self).__init__(item, selector, response, parent, **context)
+        self.response = response
 
     def load_item(self):
         item = self.item
+        item["optionFields"] = {}
+        
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
+            #pdb.set_trace()
+            if field_name == "link":
+                with open("crawed.txt", 'a+') as f:
+                    f.write("-->".join(value) + "\n")
+                    f.close()
+                with open("html.txt", 'a+') as t:
+                    t.write(self.response.text)
+                    t.close()
             if value is not None:
-                if hasattr(item, field_name):
+                if item.fields[field_name] != None:
                     item[field_name] = value
                 else:
-                    item["fields"][field_name] = value
+                    #pdb.set_trace()
+                    item["optionFields"][field_name] = value
+        #pdb.set_trace()
+        
         return item
+    def _get_item_field_attr(self, field_name, key, default=None):
+        try:
+            value = super(PageItemLoader, self)._get_item_field_attr(field_name, key, default)
+        except Exception, e:
+            logger.warning('_get_item_field_attr didnot find the attr %s' % field_name)
+            value = default
+        finally:
+            return value
+       
