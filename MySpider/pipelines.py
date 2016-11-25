@@ -35,7 +35,7 @@ class MyspiderPipeline(object):
     def getRestfulAPIData(self, item):
         url = self.server_uri + "/api/1.0"
         jsn = {}
-        #pdb.set_trace()
+        pdb.set_trace()
         if item["depart"] == "" or item["section"] == "" or item["title"] == "" or item["link"] == "" or item["date"] == "":
         	raise 
         jsn["mkey"] = item["depart"]
@@ -58,7 +58,7 @@ class MyspiderPipeline(object):
             #pdb.set_trace()
             (url, jsn) = self.getRestfulAPIData(item)
             #logger.warning('process_item title %s' % item["title"])
-            
+            pdb.set_trace()
             r = requests.post(url, data = json.dumps(jsn), headers = headers)  #will stuck here a little, need improving
         except Exception, e:
             raise DropItem("process_item the server(%s) response error" % self.server_uri)

@@ -9,7 +9,9 @@ import scrapy
 from scrapy.loader import ItemLoader
 from scrapy.contrib.loader.processor import TakeFirst, MapCompose, Join
 import logging
+import chardet
 import pdb
+
 logger = logging.getLogger(__name__)
 
 class PageContentItem(scrapy.Item):
@@ -25,7 +27,7 @@ class PageContentItem(scrapy.Item):
    
 class PageItemLoader(ItemLoader):
     def __init__(self, item=None, selector=None, response=None, parent=None, **context):
-
+        #response.text = response.text.decode("utf-8")
         super(PageItemLoader, self).__init__(item, selector, response, parent, **context)
         self.response = response
 
@@ -35,14 +37,18 @@ class PageItemLoader(ItemLoader):
         
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
-            #pdb.set_trace()
+           
             if field_name == "link":
                 with open("crawed.txt", 'a+') as f:
                     f.write("-->".join(value) + "\n")
+                    #f.write(self.response.url)
                     f.close()
-                with open("html.txt", 'a+') as t:
-                    t.write(self.response.text)
-                    t.close()
+                #with open("test.html", 'a+') as t:
+                #    pdb.set_trace()
+                    #u = isinstance(self.response, unicode)
+                    #enc = chardet.detect(self.response.text)
+                #    t.write(self.response.text.encode("utf-8"))
+                #    t.close()
             if value is not None:
                 if item.fields[field_name] != None:
                     item[field_name] = value
