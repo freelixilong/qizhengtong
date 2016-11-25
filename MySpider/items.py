@@ -9,7 +9,7 @@ import scrapy
 from scrapy.loader import ItemLoader
 from scrapy.contrib.loader.processor import TakeFirst, MapCompose, Join
 import logging
-import chardet
+#import chardet
 import pdb
 
 logger = logging.getLogger(__name__)

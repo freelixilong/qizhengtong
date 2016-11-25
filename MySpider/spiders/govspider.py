@@ -91,7 +91,7 @@ class GovSpider(Spider):
         for url in self.start_urls:
             self.crawedAppend(url)
             yield Request(url, self._parse_response)
-    def closed(self):
+    def closed(self, reason):
         logger.warning('self mongo db closed')
         self.client.close()
 
@@ -123,6 +123,8 @@ class GovSpider(Spider):
             for url in self.site_urls:
                 #logger.warning('_parse_response got lnk url %s' % link.url)
                 if not self.hasCrawedUrl(url):
+                    site_urls = link_extractor.extract_links(response)
+                    self.add_urls_noduplicate(site_urls)
                     self.crawedAppend(url)
                     yield Request(url, self._parse_response)
     def get_item(self, response):
