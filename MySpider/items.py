@@ -50,11 +50,16 @@ class PageItemLoader(ItemLoader):
                 #    t.write(self.response.text.encode("utf-8"))
                 #    t.close()
             if value is not None:
-                if item.fields[field_name] != None:
-                    item[field_name] = value
-                else:
-                    #pdb.set_trace()
+                try:
+                    if item.fields[field_name] != None:
+                        item[field_name] = value
+                    else:
+                        #pdb.set_trace()
+                        item["optionFields"][field_name] = value
+                except Exception, e:
                     item["optionFields"][field_name] = value
+
+                
         #pdb.set_trace()
         
         return item

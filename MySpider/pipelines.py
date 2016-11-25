@@ -35,9 +35,8 @@ class MyspiderPipeline(object):
     def getRestfulAPIData(self, item):
         url = self.server_uri + "/api/1.0"
         jsn = {}
-        pdb.set_trace()
         if item["depart"] == "" or item["section"] == "" or item["title"] == "" or item["link"] == "" or item["date"] == "":
-        	raise 
+               raise 
         jsn["mkey"] = item["depart"]
         jsn["subKey"] = item["section"]
         #jsn["action"] = "post"
@@ -47,7 +46,7 @@ class MyspiderPipeline(object):
             data["link"] = item["link"]
             data["date"] = item["date"]
             for k, v in item["optionFields"]:
-            	data[k] = v
+                   data[k] = v
             jsn["data"]= data
 
         return (url, jsn)
@@ -58,17 +57,17 @@ class MyspiderPipeline(object):
             #pdb.set_trace()
             (url, jsn) = self.getRestfulAPIData(item)
             #logger.warning('process_item title %s' % item["title"])
-            pdb.set_trace()
+            #pdb.set_trace()
             r = requests.post(url, data = json.dumps(jsn), headers = headers)  #will stuck here a little, need improving
         except Exception, e:
             raise DropItem("process_item the server(%s) response error" % self.server_uri)
         else:
-            if r.status == '404' or r.status == '500':
+            try:
+                if r.status == '404' or r.status == '500':
+                    raise DropItem("process_item the server(%s) response error" % self.server_uri)
+                else:
+                    return item
+            except Exception, e:
                 raise DropItem("process_item the server(%s) response error" % self.server_uri)
-            else:
-                return item
-        finally:
-            pass
-            
             
 
