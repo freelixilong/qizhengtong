@@ -21,7 +21,7 @@ MYSERVER_URI = 'http://localhost:8000'
 ROBOTSTXT_OBEY = True
 
 MONGO_DATABASE = "test"
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb://localhost:27019/"
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
