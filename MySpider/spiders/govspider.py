@@ -82,6 +82,10 @@ class GovSpider(Spider):
         self.internal_err = False
         for (k, v) in res["fields"].items():
             self.fields[k] = v
+    def _Request(self, url):
+        return Request("http://localhost:8088/", self._parse_response, body= url)
+        #req.meta["proxy"] = "http://localhost:8088/"
+        #return req
     def start_requests(self):
         if not self.init_db:
             self.initial_db()
@@ -90,7 +94,7 @@ class GovSpider(Spider):
             raise NotSupported()
         for url in self.start_urls:
             self.crawedAppend(url)
-            yield Request(url, self._parse_response)
+            yield self._Request(url)
     def closed(self, reason):
         logger.warning('self mongo db closed')
         self.client.close()
@@ -126,7 +130,7 @@ class GovSpider(Spider):
                     site_urls = link_extractor.extract_links(response)
                     self.add_urls_noduplicate(site_urls)
                     self.crawedAppend(url)
-                    yield Request(url, self._parse_response)
+                    yield self._Request(url)
     def get_item(self, response):
         #pdb.set_trace()
         il = PageItemLoader(item=PageContentItem(depart = self.depart), response=response)

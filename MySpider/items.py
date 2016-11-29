@@ -37,7 +37,7 @@ class PageItemLoader(ItemLoader):
         
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
-            if field_name == "link":
+            #if field_name == "link":
                 #with open("test.html", 'a+') as t:
                 #    pdb.set_trace()
                     #u = isinstance(self.response, unicode)
