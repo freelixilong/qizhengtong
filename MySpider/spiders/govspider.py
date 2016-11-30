@@ -60,7 +60,6 @@ class GovSpider(Spider):
     def set_start_urls(self, urls, host):
         self.start_urls.add(urls)
         self.start_host = host
-        pdb.set_trace()
     def initial_db(self):
         try:
             self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
@@ -76,14 +75,16 @@ class GovSpider(Spider):
         #pdb.set_trace()
         self.condition = res["condition"]
         self.start_urls.append(res["link"])
-        #self.fields = res["fields"]
+        #self.start_host = res["link"]
         self.fields = {}
         self.init_db = True
         self.internal_err = False
         for (k, v) in res["fields"].items():
             self.fields[k] = v
     def _Request(self, url):
-        return Request("http://localhost:8088/", self._parse_response, body= url)
+        header= {"site": url, "sitebase": self.start_host}
+        #return Request("http://localhost:8088/", self._parse_response, headers=header)
+        return Request(url, self._parse_response)
         #req.meta["proxy"] = "http://localhost:8088/"
         #return req
     def start_requests(self):
