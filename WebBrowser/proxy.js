@@ -1,4 +1,3 @@
-var page = require('webpage').create();
 var WebServer = require('webserver');
 var system = require('system');
 var host, port;
@@ -22,28 +21,36 @@ if (system.args.length !== 2) {
     }
 }
 function requestRemoteServer(request, response) {
-    console.log("GOT HTTP REQUEST site:", request.headers["site"]);
-    console.log("GOT HTTP REQUEST site:", request.headers["path"]);
-	var url = request.headers["site"] + request.headers["path"]
+    
+	var url = request.headers["site"] + request.headers["path"];
+    url = "http://" + url;
+    console.log("open:", url);
+    var page = require('webpage').create();
     page.open(url, function (status) {
         if (status !== 'success') {
-            console.log('FAIL to load the address');
-            return null;
+            console.log('FAIL to load the address',status);
+            response.statusCode = 500;
+            response.write('FAIL to load the address:', url);
+            response.close();
+            return;
         } else {
+            console.log("success open site:", url);
             response.statusCode = 200;
-            response.headers = {"Cache": "no-cache", "Content-Type": "text/html"};
-          
+            
+            //console.log(page.content.headers);
+            //response.headers = page.headers;
             response.write(page.content);
             // note: writeBody can be called multiple times
             response.close();
-            return 
+            return ;
         }
         
     });
 }
+/*
 {
     "headers": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        
         "Accept-Encoding": "gzip,deflate",
         "Accept-Language": "zh-CN,zh;q=0.8",
         "Connection": "close",
@@ -59,4 +66,4 @@ function requestRemoteServer(request, response) {
     "httpVersion": "1.0",
     "method": "GET",
     "url": "/index.html"
-}
+}*/
