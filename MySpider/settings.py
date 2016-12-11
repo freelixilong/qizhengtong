@@ -12,7 +12,7 @@ BOT_NAME = 'MySpider'
 
 SPIDER_MODULES = ['MySpider.spiders']
 NEWSPIDER_MODULE = 'MySpider.spiders'
-
+SPLASH_URL = 'http://59.110.47.98:8050'
 MYSERVER_URI = 'http://localhost:8000'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'
@@ -50,12 +50,21 @@ MONGO_URI = "mongodb://localhost:27019/"
 #SPIDER_MIDDLEWARES = {
 #    'MySpider.middlewares.MyCustomSpiderMiddleware': 543,
 #}
-
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
+#DOWNLOADER_MIDDLEWARES = {
+#    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
+#    'MySpider.middlewares.MyCustomDownloaderMiddleware': 100,
+#}
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-    'MySpider.middlewares.MyCustomDownloaderMiddleware': 100,
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 
 # Enable or disable extensions

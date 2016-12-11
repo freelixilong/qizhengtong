@@ -32,7 +32,7 @@ function requestRemoteServer(request, response) {
             response.statusCode = 500;
             response.write('FAIL to load the address:', url);
             response.close();
-            return;
+            
         } else {
             console.log("success open site:", url);
             response.statusCode = 200;
@@ -41,9 +41,10 @@ function requestRemoteServer(request, response) {
             //response.headers = page.headers;
             response.write(page.content);
             // note: writeBody can be called multiple times
-            response.close();
-            return ;
+            response.close(); 
         }
+        page.close();
+        //callback.apply();
         
     });
 }

@@ -37,13 +37,10 @@ class PageItemLoader(ItemLoader):
         
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
-            #if field_name == "link":
-                #with open("test.html", 'a+') as t:
-                #    pdb.set_trace()
-                    #u = isinstance(self.response, unicode)
-                    #enc = chardet.detect(self.response.text)
-                #    t.write(self.response.text.encode("utf-8"))
-                #    t.close()
+            if field_name == "link":
+                with open("test.html", 'a+') as t:
+                    t.write(self.response.url.encode("utf-8") + "\n")
+                    t.close()
             if value is not None:
                 try:
                     if item.fields[field_name] != None:
