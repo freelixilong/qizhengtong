@@ -14,6 +14,9 @@ from scrapy.utils.gz import gunzip, is_gzipped
 from scrapy.linkextractors import LinkExtractor
 from scrapy.utils.python import unique as unique_list
 from scrapy.exceptions import NotSupported
+from scrapy_splash import SplashRequest
+from MySpider.lua import proxyProc
+from MySpider.agent import agents
 import pymongo
 import pdb
 
@@ -82,11 +85,20 @@ class GovSpider(Spider):
         for (k, v) in res["fields"].items():
             self.fields[k] = v
     def _Request(self, url):
-        header= {"site": url, "sitebase": self.start_host}
-        #return Request("http://localhost:8088/", self._parse_response, headers=header)
-        return Request(url, self._parse_response)
-        #req.meta["proxy"] = "http://localhost:8088/"
-        #return req
+        #header= {"site": url, "sitebase": self.start_host} for headless phantomjs
+        agent = random.choice(agents)
+                print "------cookie---------"
+                headers={
+                    "User-Agent":agent,
+                    "Referer":"xxxxxxx",
+                }
+        yield SplashRequest(url, self._parse_response,
+            endpoint='execute',
+            cache_args=['lua_source'],
+            args={'lua_source': proxyProc},
+            headers={'X-My-Header': 'value'},
+        )
+ 
     def start_requests(self):
         if not self.init_db:
             self.initial_db()
