@@ -3,7 +3,7 @@ import re
 import logging
 import six
 
-import scrapy
+import scrapy,random
 from MySpider.items import PageContentItem 
 from MySpider.items import PageItemLoader 
 from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
@@ -15,11 +15,12 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.utils.python import unique as unique_list
 from scrapy.exceptions import NotSupported
 from scrapy_splash import SplashRequest
-from MySpider.lua import proxyProc
+from MySpider.lua import proxyServer 
 from MySpider.agent import agents
 import pymongo
 import pdb
 
+proxyProc = proxyServer()
 logger = logging.getLogger(__name__)
 
 class GovSpider(Spider):
@@ -87,16 +88,15 @@ class GovSpider(Spider):
     def _Request(self, url):
         #header= {"site": url, "sitebase": self.start_host} for headless phantomjs
         agent = random.choice(agents)
-                print "------cookie---------"
-                headers={
-                    "User-Agent":agent,
-                    "Referer":"xxxxxxx",
-                }
-        yield SplashRequest(url, self._parse_response,
+        headers={
+            "User-Agent":agent,
+            "Referer":url,
+        }
+        return SplashRequest(url, self._parse_response,
             endpoint='execute',
             cache_args=['lua_source'],
             args={'lua_source': proxyProc},
-            headers={'X-My-Header': 'value'},
+            headers=headers,
         )
  
     def start_requests(self):
