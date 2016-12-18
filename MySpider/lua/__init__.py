@@ -1,8 +1,16 @@
 # code: UTF-8
 
-def proxyServer(nextPage):
+def proxyServer():
 	proxy = '''
 	function main(splash)
+	    if "robots.txt" == string.sub(splash.args.url, -10, -1) then
+	        return {
+	            url = splash.args.url,
+	            http_status= "404",
+	            headers=splash.args.headers
+	        }
+	    end
+	    
 		splash:init_cookies(splash.args.cookies)
 		assert(splash:go{
 			splash.args.url,
@@ -11,16 +19,6 @@ def proxyServer(nextPage):
 			body=splash.args.body,
 		})
 		assert(splash:wait(0.5))
-		local nextP = nil
-		for _, nextP in ipairs(splash.args.nextPage) do
-			local el = splash:select(nextP)
-		    if el then
-		         local bounds = el:bounds()
-                 el:mouse_click{x=bounds.width/2, y=bounds.height/2})
-                 splash:wait(0.1)
-                 break
-		    end
-		end
 		local entries = splash:history()
 		local last_response = entries[#entries].response
 		return {

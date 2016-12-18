@@ -31,6 +31,7 @@ class GovSpider(Spider):
     filter_urls = []
     init_db = False
     depart = ""
+    nextPages = []
     #def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
     #    date = "", *a, **kw):
     def __init__(self, depart = "site", *a, **kw):
@@ -46,6 +47,7 @@ class GovSpider(Spider):
         self.clawed_urls = []
         self.site_urls = []
         self.started = False
+
 
     def _is_filter_url(self, url):
             if not url.startwith(self.start_host):
@@ -80,9 +82,14 @@ class GovSpider(Spider):
         self.condition = res["condition"]
         self.start_urls.append(res["link"])
         #self.start_host = res["link"]
+        for nextPage in res["nextPageXpath"]:
+            self.nextPages.append(nextPage)
         self.fields = {}
         self.init_db = True
         self.internal_err = False
+        self.link_extractor = LinkExtractor(allow=[self.start_host], deny=(), allow_domains=(), deny_domains=(), restrict_xpaths=(),
+                 tags=('a', 'area'), attrs=('href',), canonicalize=True, unique=True, process_value=None, deny_extensions=None, restrict_css=())
+
         for (k, v) in res["fields"].items():
             self.fields[k] = v
     def _Request(self, url):
@@ -97,6 +104,7 @@ class GovSpider(Spider):
             cache_args=['lua_source'],
             args={'lua_source': proxyProc},
             headers=headers,
+            #dont_obey_robotstxt = True,
         )
  
     def start_requests(self):
@@ -113,14 +121,11 @@ class GovSpider(Spider):
         self.client.close()
 
     def _parse_response(self, response):
-        main = False
-        if not self.started:
-            self.started = True
-            main = True
+        site_urls = []
         if response.url.endswith('/robots.txt'):
             for url in sitemap_urls_from_robots(response.text):
                 if not self._is_filter_url(url) and not self.hasCrawedUrl(url):
-                   self.add_urls_noduplicate(url)            
+                   site_urls = self.add_urls_noduplicate(url)            
         else:
             body = response.body
             if body is None:
@@ -128,24 +133,18 @@ class GovSpider(Spider):
                                {'response': response}, extra={'spider': self})
                 return
             #LinkExtractor
-            link_extractor = LinkExtractor(allow=[self.start_host], deny=(), allow_domains=(), deny_domains=(), restrict_xpaths=(),
-                 tags=('a', 'area'), attrs=('href',), canonicalize=True, unique=True, process_value=None, deny_extensions=None, restrict_css=())
-
-            site_urls = link_extractor.extract_links(response)
-            self.add_urls_noduplicate(site_urls)
+           
+            site_urls = self.link_extractor.extract_links(response)
+            site_urls = self.add_urls_noduplicate(site_urls)
             if self.satisfy_craw(response):
                 yield self.get_item(response)
 
-        if main:
-            for url in self.site_urls:
-                #logger.warning('_parse_response got lnk url %s' % link.url)
-                if not self.hasCrawedUrl(url):
-                    site_urls = link_extractor.extract_links(response)
-                    self.add_urls_noduplicate(site_urls)
-                    self.crawedAppend(url)
-                    yield self._Request(url)
+        for url in site_urls:
+            #logger.warning('_parse_response got lnk url %s' % link.url)
+            if not self.hasCrawedUrl(url):
+                self.crawedAppend(url)
+                yield self._Request(url)
     def get_item(self, response):
-        #pdb.set_trace()
         il = PageItemLoader(item=PageContentItem(depart = self.depart), response=response)
         for (k, v) in self.fields.items():
             if k == "link":
@@ -169,15 +168,17 @@ class GovSpider(Spider):
             return False
         return True
     def add_urls_noduplicate(self, site_urls):
+        res = []
         if isinstance(site_urls, list):
             for link in site_urls:
-                self._add_url_nodup(link.url)
+                self._add_url_nodup(link.url, res)
         else:
-            self._add_url_nodup(site_urls)
+            self._add_url_nodup(site_urls, res)
+        return res
 
-    def _add_url_nodup(self, url):
-        if not url in self.site_urls:
-            self.site_urls.append(url)
+    def _add_url_nodup(self, url, dstArr):
+        if not url in dstArr:
+            dstArr.append(url)
 
     def _get_sitemap_body(self, response):
         """Return the sitemap body contained in the given response,

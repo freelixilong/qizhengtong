@@ -37,10 +37,10 @@ class PageItemLoader(ItemLoader):
         
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
-            if field_name == "link":
-                with open("test.html", 'a+') as t:
-                    t.write(self.response.url.encode("utf-8") + "\n")
-                    t.close()
+            #if field_name == "link":
+            #    with open("test.html", 'a+') as t:
+            #        t.write(self.response.url.encode("utf-8") + "\n")
+            #        t.close()
             if value is not None:
                 try:
                     if item.fields[field_name] != None:

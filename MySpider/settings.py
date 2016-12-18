@@ -18,7 +18,7 @@ MYSERVER_URI = 'http://localhost:8000'
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 MONGO_DATABASE = "test"
 MONGO_URI = "mongodb://localhost:27019/"
