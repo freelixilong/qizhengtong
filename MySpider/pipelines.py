@@ -33,18 +33,20 @@ class MyspiderPipeline(object):
         pass
     def encode_field(self, field):
         if (isinstance(field, str)):      
-            return field.encode("utf-8")
+            return field#field.encode("utf-8")
         elif(isinstance(field,list)):
-            if(isinstance(field[0], str) or (isinstance(field[0],unicode))):
+            if(isinstance(field[0],unicode)):
                 return field[0].encode("utf-8")
-        return ""
+        elif(isinstance(field, unicode)):
+            return field.encode("utf-8")
+        return field
 
     def getRestfulAPIData(self, item):
         url = self.server_uri + "/api/1.0"
         jsn = {}
         if item["depart"] == "" or item["section"] == "" or item["title"] == "" or item["link"] == "" or item["date"] == "":
                raise 
-        #pdb.set_trace()
+        
         jsn["mkey"] = self.encode_field(item["depart"])
         jsn["subKey"] = self.encode_field(item["section"])
         #jsn["action"] = "post"
@@ -53,6 +55,7 @@ class MyspiderPipeline(object):
             data["title"] = self.encode_field(item["title"])
             data["link"] = self.encode_field(item["link"])
             data["date"] = self.encode_field(item["date"])
+            #pdb.set_trace()
             for k in item["optionFields"].keys():
                    data[self.encode_field(k)] = self.encode_field(item["optionFields"][k])
             jsn["data"]= data
@@ -64,7 +67,7 @@ class MyspiderPipeline(object):
             headers = {'content-type':'application/json'}
             (url, jsn) = self.getRestfulAPIData(item)
             #logger.warning('process_item title %s' % item["title"])
-            pdb.set_trace()
+            #pdb.set_trace()
             logger.warning('process_item post: %s' % json.dumps(jsn, ensure_ascii=False))
             with open("item.json", 'a+') as t:
                 t.write(json.dumps(jsn, ensure_ascii=False) + "\n")
