@@ -11,26 +11,11 @@ from scrapy.exceptions import DropItem
 import pdb
 import logging
 logger = logging.getLogger(__name__)
-_DEBUG = True
-class MyspiderPipeline(object):
+class Pipeline(object):
 
     def __init__(self, server_uri):
         self.server_uri = server_uri
 
-    @classmethod
-    def from_crawler(cls, crawler):
-        return cls(
-            server_uri=crawler.settings.get('MYSERVER_URI'),
-        )
-
-    def open_spider(self, spider):
-        #self.client = pymongo.MongoClient(self.mongo_uri)
-        #self.db = self.client[self.mongo_db]
-        pass
-
-    def close_spider(self, spider):
-        #self.client.close()
-        pass
     def encode_field(self, field):
         if (isinstance(field, str)):      
             return field#field.encode("utf-8")
@@ -62,7 +47,7 @@ class MyspiderPipeline(object):
 
         return (url, jsn)
 
-    def process_item(self, item, spider):
+    def send_item(self, item):
         try:
             headers = {'content-type':'application/json'}
             (url, jsn) = self.getRestfulAPIData(item)
@@ -75,13 +60,5 @@ class MyspiderPipeline(object):
             r = requests.post(url, data = json.dumps(jsn, ensure_ascii=False), headers = headers)  #will stuck here a little, need improving
         except Exception, e:
             raise DropItem("process_item the server(%s) response error" % self.server_uri)
-        else:
-            try:
-                if r.status == '404' or r.status == '500':
-                    raise DropItem("process_item the server(%s) response error" % self.server_uri)
-                else:
-                    return item
-            except Exception, e:
-                raise DropItem("process_item the server(%s) response error" % self.server_uri)
             
 

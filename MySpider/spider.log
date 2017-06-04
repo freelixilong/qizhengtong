@@ -1,0 +1,47 @@
+2017-06-04 05:48:11,350 - govspider.py:52 - info - spider is finished!
+2017-06-04 05:48:11,628 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 05:48:11,630 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 05:48:14,928 - govspider.py:125 - info - crawled url: http://www.bjpc.gov.cn/
+2017-06-04 05:48:14,936 - govspider.py:148 - info - exceptions happended 'NoneType' object has no attribute 'page_source'
+2017-06-04 05:48:14,938 - govspider.py:118 - info - self mongo db closed
+2017-06-04 05:51:14,454 - govspider.py:52 - info - spider is finished!
+2017-06-04 05:51:14,737 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 05:51:14,747 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 05:55:28,761 - govspider.py:118 - info - self mongo db closed
+2017-06-04 05:56:11,531 - govspider.py:52 - info - spider is finished!
+2017-06-04 05:56:11,681 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 05:56:11,684 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 05:59:45,240 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:08:11,962 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:08:12,208 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:08:12,221 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:08:24,866 - govspider.py:125 - info - crawled url: http://www.bjpc.gov.cn/
+2017-06-04 06:08:24,881 - govspider.py:148 - info - exceptions happended 'NoneType' object has no attribute 'page_source'
+2017-06-04 06:08:24,882 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:12:02,870 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:12:03,916 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:12:03,931 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:12:51,806 - govspider.py:125 - info - crawled url: http://www.bjpc.gov.cn/
+2017-06-04 06:13:13,390 - govspider.py:127 - info - exceptions happended 'NoneType' object has no attribute 'page_source'
+2017-06-04 06:13:13,784 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:14:41,968 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:14:42,617 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:14:42,680 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:20:10,630 - govspider.py:149 - info - exceptions happended 
+2017-06-04 06:20:10,721 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:23:39,262 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:23:39,598 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:23:39,609 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:23:46,808 - govspider.py:125 - info - crawled url: http://www.bjpc.gov.cn/
+2017-06-04 06:24:27,381 - govspider.py:127 - info - exceptions happended 'NoneType' object has no attribute 'page_source'
+2017-06-04 06:24:27,386 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:28:53,842 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:28:54,861 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:28:54,891 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:29:38,237 - govspider.py:146 - info - exceptions happended 
+2017-06-04 06:29:38,248 - govspider.py:118 - info - self mongo db closed
+2017-06-04 06:32:08,792 - govspider.py:52 - info - spider is finished!
+2017-06-04 06:32:17,796 - govspider.py:71 - info - start crawl http://www.bjpc.gov.cn/!
+2017-06-04 06:32:17,870 - govspider.py:123 - info - start crawl url: http://www.bjpc.gov.cn/
+2017-06-04 06:38:22,030 - govspider.py:146 - info - exceptions happended 
+2017-06-04 06:38:22,091 - govspider.py:118 - info - self mongo db closed
