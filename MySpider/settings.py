@@ -13,7 +13,7 @@ BOT_NAME = 'MySpider'
 SPIDER_MODULES = ['MySpider.spiders']
 NEWSPIDER_MODULE = 'MySpider.spiders'
 SPLASH_URL = 'http://59.110.47.98:8050'
-MYSERVER_URI = 'http://localhost:8000'
+MYSERVER_URI = 'http://192.168.1.99:8000'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'
 
@@ -21,7 +21,7 @@ MYSERVER_URI = 'http://localhost:8000'
 ROBOTSTXT_OBEY = False
 
 MONGO_DATABASE = "test"
-MONGO_URI = "mongodb://localhost:27019/"
+MONGO_URI = "mongodb://192.168.1.99:27019/"
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

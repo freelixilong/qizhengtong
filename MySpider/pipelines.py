@@ -52,7 +52,7 @@ class Pipeline(object):
             headers = {'content-type':'application/json'}
             (url, jsn) = self.getRestfulAPIData(item)
             #logger.warning('process_item title %s' % item["title"])
-            #pdb.set_trace()
+            pdb.set_trace()
             logger.warning('process_item post: %s' % json.dumps(jsn, ensure_ascii=False))
             #with open("item.json", 'a+') as t:
             #    t.write(json.dumps(jsn, ensure_ascii=False) + "\n")

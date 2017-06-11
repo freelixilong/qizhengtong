@@ -3,7 +3,7 @@ import re
 import logging
 import six
 
-import scrapy,random
+#import scrapy,random
 from items import PageContentItem 
 from items import PageItemLoader 
 #from scrapy.utils.sitemap import Sitemap, sitemap_urls_from_robots
@@ -38,7 +38,7 @@ class GovSpider():
     nextPages = []
     #def __init__(self, deny = '', filter_urls = [], condition = "", title = '', content = "", 
     #    date = "", *a, **kw):
-    def __init__(self, browser ,settings,*a, **kw):
+    def __init__(self, browser ,settings, *a, **kw):
         self.browser = browser
         self.settings = settings
         if self.browser:
@@ -49,23 +49,25 @@ class GovSpider():
         self.site_urls = []
         self.started = False
         self.pipeline = Pipeline(self.settings.get('MYSERVER_URI'))
-        logger.info('spider is finished!')
+        logger.info('spider init is finished!')
 
     def _init_from_db(self):
         self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
         self.db = self.client[self.settings.get('MONGO_DATABASE', 'test')] 
-    def destroy_init_data(self):
-        self.condition = ""
-        del self.start_urls 
-        del self.nextPages
-        del self.fields
-        self.init_db = False
-        del self.link_extractor
-        #self.start_host = res["link"]
-      
+
+    def start_once(self, site= None, startUrl = None):
+        res = self.db.GovDepartment.find_one({"key": site})
+        self._init_gov_data(res)
+        logger.info('start oncec crawl %s!'%startUrl)
+        self.start_requests()
+        self.destroy_init_data() 
+
     def start(self):
         res = self.db.GovDepartment.find({"key":{"$ne":""}})
-
+        self.f = open("urls.txt", 'a+')
+        #with open("urls.html", 'a+') as t:
+            #    t.write(self.browser.page_source.encode("utf-8"))
+            #    t.close()
         for gov in res:
             self._init_gov_data(gov)
             logger.info('start crawl %s!', gov['link'])
@@ -73,42 +75,50 @@ class GovSpider():
             self.destroy_init_data()
 
     def _is_filter_url(self, url):
-            if not url.startwith(self.start_host):
-                return True #only claw in self site
-            if self.deny:
-                for u in self.filter_urls:
-                    if url.startwith(u):
-                        return True
-                return False
-            else:
-                for u in self.filter_urls:
-                    if url.startwith(u):
-                        return False
-                return True
-
-    def set_start_urls(self, urls, host):
-        self.start_urls.add(urls)
-        self.start_host = host
-
-    def _init_gov_data(self, gov):
-       
-        self.condition = gov["condition"]
-        self.start_urls.append(gov["link"])
-        #self.browser = webdriver.Firefox()
+        if not url.startwith(self.start_host):
+            return True #only claw in self site
+        if self.deny:
+            for u in self.filter_urls:
+                if url.startwith(u):
+                    return True
+            return False
+        else:
+            for u in self.filter_urls:
+                if url.startwith(u):
+                    return False
+            return True
+    def destroy_init_data(self):
+        self.condition = ""
+        self.start_urls =[]
+        self.nextPages = []
+        del self.fields
+        self.init_db = False
+        del self.link_extractor
         #self.start_host = res["link"]
-        if type(gov["nextPageXpath"])==str:
-            self.nextPages = gov["nextPageXpath"] 
-        else: 
-            for nextPage in gov["nextPageXpath"]:
-                self.nextPages.append(nextPage)
-        self.fields = {}
-        self.init_db = True
-        self.internal_err = False
-        self.link_extractor = LinkExtractor(allow=[self.start_host], deny=(), allow_domains=(), deny_domains=(), restrict_xpaths=(),
-                 tags=('a', 'area'), attrs=('href',), canonicalize=True, unique=True, process_value=None, deny_extensions=None, restrict_css=())
+      
+    def _init_gov_data(self, gov):
+        
+        try:
+            self.condition = gov["condition"]
+            self.start_urls.append(gov["link"])
+            #self.browser = webdriver.Firefox()
+            self.start_host = gov["link"]
 
-        for field in gov["fields"]:
-            self.fields[field["name"]] = field["xpath"]
+            if type(gov["nextPageXpath"])==str or type(gov["nextPageXpath"])==unicode:
+                self.nextPages.append(gov["nextPageXpath"]) 
+            else: 
+                for nextPage in gov["nextPageXpath"]:
+                    self.nextPages.append(nextPage)
+            self.fields = {}
+            self.init_db = True
+            self.internal_err = False
+            self.link_extractor = LinkExtractor(allow=[self.start_host], deny=(), allow_domains=(), deny_domains=(), restrict_xpaths=(),
+                     tags=('a', 'area'), attrs=('href',), canonicalize=True, unique=True, process_value=None, deny_extensions=None, restrict_css=())
+
+            for field in gov["fields"]:
+                self.fields[field["name"]] = field["xpath"]
+        except Exception, e:
+            print "_init_gov_data error: %s"%e.message
 
     def start_requests(self):
         for url in self.start_urls:
@@ -117,47 +127,58 @@ class GovSpider():
     def close(self):
         logger.warning('self mongo db closed')
         self.client.close()
+        self.f.close()
 
     def request(self, url):
         try:
             logger.info("start crawl url: %s"%url)
             browser = self.browser.get(url)
             logger.info("crawled url: %s"%url)
-            pdb.set_trace()
-            page = copy.deepcopy(browser.page_source)
-           
+            
             self.crawedAppend(url)
-            res = TextResponse(url,body=page)
+            res = TextResponse(url,body=self.browser.page_source.encode("utf-8"))
             site_urls = self.link_extractor.extract_links(res)
             site_urls = self.add_urls_noduplicate(site_urls)
-            
+            #with open("temp.html", 'w') as t:
+            #    t.write(self.browser.page_source.encode("utf-8"))
+            #    t.close()
+            if url == "http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/qtzcwj/index_1.htm":
+                pdb.set_trace()
             if self.satisfy_craw(res):
                 item =  self.get_item(res)
                 self.save_item(item)
-
-            for url in site_urls:
-                if not self.hasCrawedUrl(url):
-                    self.request(url) ##once come here, the browser is dirty data
-
-            if self.has_nextpage(page):
-                self.craw_next_pages(url)
+            nextXpath = self.get_next_page_xpath(self.browser)
+    
+            if nextXpath:
+                pdb.set_trace()
+                self.craw_next_pages(nextXpath)
+            else:
+                for url in site_urls:
+                    if not self.hasCrawedUrl(url):
+                        self.request(url) ##once come here, the browser is dirty data
 
         except Exception, e:
             logger.warning('exceptions happended %s'%e.message)
         else:
             return
- 
-    def craw_next_pages(self, url):
-        browser = self.browser.get(url)
-        page = browser.page_source
+    def get_next_page_xpath(self, browser):
+        for nextPage in self.nextPages:
+            try:
+                if browser.find_element_by_xpath(nextPage):
+                    return nextPage
+            except Exception, e:
+                return None 
+        return None
+        
 
+    def craw_next_pages(self, nextXpath):
         class wait_for_next_element(object):
             def __init__(self, xpath):
                 #self.locator = locator
                 self.xpath = xpath
             def __call__(self, driver):
                 #elements = [element for element in EC._find_elements(driver, self.locator) if EC.element_to_be_clickable(element)]
-                elements = driver.find_element_by_xpath(this.nextPage)
+                elements = driver.find_element_by_xpath(self.xpath)
                 for elment in elements:
                     if EC.element_to_be_clickable(element):
                         return True
@@ -165,25 +186,26 @@ class GovSpider():
              
         try:
             tempBrowser = webdriver.Firefox()
-            while self.browser.find_element_by_xpath(this.nextPage):
-                self.browser.find_element_by_xpath(this.nextPage).click()   
-                WebDriverWait(self.browser, 10).until(wait_for_next_element(this.nextPage)) #(BY.NAME, "body")
-                page = self.browser.page_source
-                res = TextResponse(url,body=page)
-
+            while self.browser.find_element_by_xpath(nextXpath):
+                res = TextResponse(self.browser.current_url ,body=self.browser.page_source)
+                self.crawedAppend(self.browser.current_url)
                 site_urls = self.link_extractor.extract_links(res)
                 site_urls = self.add_urls_noduplicate(site_urls)
                 for url in site_urls:
+                    tempBrowser.get(url)
                     res = TextResponse(url,body=tempBrowser.page_source)
                     if self.satisfy_craw(res):
-                        tempBrowser.get(url)
+                        self.crawedAppend(url)
                         item =  self.get_item(res)
-                        self.save_item(item)     
+                        self.save_item(item)    
+
+                self.browser.find_element_by_xpath(nextXpath).click()
+                nextElement = wait_for_next_element(nextXpath)   
+                WebDriverWait(self.browser, 10).until(nextElement(self.browser)) #(BY.NAME, "body")  
             
         except Exception, e:
             logger.warning('craw_next_pages failed %s'%e.msg)
         finally:
-            pdb.set_trace()
             tempBrowser.close()
         
     def get_item(self, response):
@@ -197,15 +219,20 @@ class GovSpider():
         self.pipeline.send_item(item)
 
     def satisfy_craw(self, response):
-        data = response.xpath(self.condition).extract()
-        if data != []:
-            return True
+
+        for condition in self.condition:
+            data = response.xpath(condition).extract()
+            if data != []:
+                return True
+        
         return False
     def crawedAppend(self, url):
         if not self.hasCrawedUrl(url):
             self.clawed_urls.append(url)
+            self.f.write(url.encode("utf-8")+"\n")
 
     def hasCrawedUrl(self, url):
+        
         if not url in self.clawed_urls:
             return False
         return True

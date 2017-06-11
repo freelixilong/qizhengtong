@@ -16,3 +16,16 @@ sudo pip install selenium
 
 pip install pyvirtualdisplay selenium
 apt-get install xvfb
+
+
+
+-------------------------
+docker pull index.docker.io/pimuzzo/selenium-python-xvfb
+
+docker run -v /home/xlong/qizhengtong/virenv/:/home --name dataVolume b925bc252a66 /bin/bash
+
+docker run -it --volumes-from dataVolume  b925bc252a66 /bin/bash --name selenium
+
+docker run -i -t --name selenium b925bc252a66 /bin/bash -v /home/xlong/qizhengtong/virenv/qizhengtong:/home
+
+docker run --net=host
