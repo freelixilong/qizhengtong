@@ -12,7 +12,7 @@ BOT_NAME = 'MySpider'
 
 SPIDER_MODULES = ['MySpider.spiders']
 NEWSPIDER_MODULE = 'MySpider.spiders'
-SPLASH_URL = 'http://59.110.47.98:8050'
+SPLASH_URL = 'http://59.110.47.98:8050/render.html'
 MYSERVER_URI = 'http://192.168.1.99:8000'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MySpider (+http://www.yourdomain.com)'

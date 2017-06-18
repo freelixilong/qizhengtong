@@ -1,287 +1,160 @@
-2017-06-11 08:26:46,657 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:46,680 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057592.htm
-2017-06-11 08:26:47,395 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057592.htm
-2017-06-11 08:26:47,535 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:47,539 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057593.htm
-2017-06-11 08:26:48,158 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057593.htm
-2017-06-11 08:26:48,281 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:48,285 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/dczj/
-2017-06-11 08:26:48,930 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/dczj/
-2017-06-11 08:26:49,078 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:49,082 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/201611/t10662188.htm
-2017-06-11 08:26:49,682 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/201611/t10662188.htm
-2017-06-11 08:26:49,792 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:49,797 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201611/t10641903.htm
-2017-06-11 08:26:50,446 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201611/t10641903.htm
-2017-06-11 08:26:50,606 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:50,611 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/dczj/201608/t10470926.htm
-2017-06-11 08:26:51,536 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/dczj/201608/t10470926.htm
-2017-06-11 08:26:51,661 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:51,664 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/hdft/
-2017-06-11 08:26:52,136 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/hdft/
-2017-06-11 08:26:52,194 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:52,198 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/hdft/201701/t10802231.htm
-2017-06-11 08:26:52,932 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/hdft/201701/t10802231.htm
-2017-06-11 08:26:53,070 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:53,072 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201608/t10478536.htm%20
-2017-06-11 08:26:53,306 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201608/t10478536.htm%20
-2017-06-11 08:26:53,372 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/hdft/201603/t9986462.htm%20
-2017-06-11 08:26:53,539 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/hdft/201603/t9986462.htm%20
-2017-06-11 08:26:53,600 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/hdft/201601/t9881262.htm%20
-2017-06-11 08:26:53,757 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/hdft/201601/t9881262.htm%20
-2017-06-11 08:26:53,801 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/hdft/201512/t9815887.htm%20
-2017-06-11 08:26:53,956 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/hdft/201512/t9815887.htm%20
-2017-06-11 08:26:54,001 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/tsjb/201009/t9779263.htm
-2017-06-11 08:26:54,675 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/tsjb/201009/t9779263.htm
-2017-06-11 08:26:54,811 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:54,815 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/tsjb/201009/t9779262.htm
-2017-06-11 08:26:55,436 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/tsjb/201009/t9779262.htm
-2017-06-11 08:26:55,552 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:55,554 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/tsjb/201506/t9779261.htm
-2017-06-11 08:26:56,168 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/tsjb/201506/t9779261.htm
-2017-06-11 08:26:56,278 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:56,281 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zmhd/tsjb/201604/t10121827.htm
-2017-06-11 08:26:56,875 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zmhd/tsjb/201604/t10121827.htm
-2017-06-11 08:26:56,985 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:56,989 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/
-2017-06-11 08:26:57,452 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/
-2017-06-11 08:26:57,493 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:57,496 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685875.htm
-2017-06-11 08:26:58,499 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685875.htm
-2017-06-11 08:26:58,697 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:58,702 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685867.htm
-2017-06-11 08:26:59,363 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685867.htm
-2017-06-11 08:26:59,493 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:26:59,496 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685866.htm
-2017-06-11 08:27:00,150 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685866.htm
-2017-06-11 08:27:00,301 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:00,305 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685865.htm
-2017-06-11 08:27:01,027 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/xzspsx/201611/t10685865.htm
-2017-06-11 08:27:01,180 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:01,185 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/
-2017-06-11 08:27:01,583 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/
-2017-06-11 08:27:01,637 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:01,640 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685930.htm
-2017-06-11 08:27:02,393 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685930.htm
-2017-06-11 08:27:02,589 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:02,596 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685855.htm
-2017-06-11 08:27:03,245 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685855.htm
-2017-06-11 08:27:03,366 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:03,375 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685856.htm
-2017-06-11 08:27:04,002 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685856.htm
-2017-06-11 08:27:04,128 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:04,131 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685939.htm
-2017-06-11 08:27:05,173 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/bszn/cssbsx/201611/t10685939.htm
-2017-06-11 08:27:05,344 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:05,348 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/
-2017-06-11 08:27:05,804 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/
-2017-06-11 08:27:05,858 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:05,860 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053015.htm
-2017-06-11 08:27:06,525 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053015.htm
-2017-06-11 08:27:06,645 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:06,647 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053018.htm
-2017-06-11 08:27:07,275 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053018.htm
-2017-06-11 08:27:07,406 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:07,415 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/zxfw/jwtzbasq/
-2017-06-11 08:27:07,844 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/zxfw/jwtzbasq/
-2017-06-11 08:27:07,888 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/ylfwjg/201208/t9779282.htm
-2017-06-11 08:27:08,628 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/ylfwjg/201208/t9779282.htm
-2017-06-11 08:27:08,745 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:08,747 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/ylfwjg/
-2017-06-11 08:27:09,109 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/ylfwjg/
-2017-06-11 08:27:09,163 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:09,167 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/szsc/
-2017-06-11 08:27:09,560 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/szsc/
-2017-06-11 08:27:09,950 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:09,953 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/spjg/
-2017-06-11 08:27:10,296 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/spjg/
-2017-06-11 08:27:10,347 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:10,351 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779304.htm
-2017-06-11 08:27:11,364 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779304.htm
-2017-06-11 08:27:11,562 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:11,564 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779303.htm
-2017-06-11 08:27:12,587 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779303.htm
-2017-06-11 08:27:12,817 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:12,822 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779302.htm
-2017-06-11 08:27:13,723 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/201208/t9779302.htm
-2017-06-11 08:27:13,853 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:13,858 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/
-2017-06-11 08:27:14,216 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jzjg/
-2017-06-11 08:27:14,275 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:14,279 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cxjg/201208/t9779309.htm
-2017-06-11 08:27:15,031 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cxjg/201208/t9779309.htm
-2017-06-11 08:27:15,179 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:15,181 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/cdzcx/
-2017-06-11 08:27:15,704 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/cdzcx/
-2017-06-11 08:27:15,758 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:15,760 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cxjg/
-2017-06-11 08:27:16,154 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cxjg/
-2017-06-11 08:27:16,220 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:16,224 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779316.htm
-2017-06-11 08:27:16,941 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779316.htm
-2017-06-11 08:27:17,058 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:17,060 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779315.htm
-2017-06-11 08:27:17,746 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779315.htm
-2017-06-11 08:27:17,896 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:17,899 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779314.htm
-2017-06-11 08:27:18,955 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/201208/t9779314.htm
-2017-06-11 08:27:19,203 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:19,205 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/
-2017-06-11 08:27:19,642 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/jyjg/
-2017-06-11 08:27:19,692 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:19,695 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779338.htm
-2017-06-11 08:27:20,366 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779338.htm
-2017-06-11 08:27:20,507 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:20,509 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779339.htm
-2017-06-11 08:27:21,119 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779339.htm
-2017-06-11 08:27:21,230 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:21,234 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779341.htm
-2017-06-11 08:27:21,884 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/201208/t9779341.htm
-2017-06-11 08:27:22,013 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:22,016 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/
-2017-06-11 08:27:22,372 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/qtjg/
-2017-06-11 08:27:22,428 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:22,432 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/xzsyxsf/201505/t9781962.htm
-2017-06-11 08:27:23,087 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/xzsyxsf/201505/t9781962.htm
-2017-06-11 08:27:23,216 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:23,218 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/xzsyxsf/201505/t9781961.htm
-2017-06-11 08:27:23,910 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/xzsyxsf/201505/t9781961.htm
-2017-06-11 08:27:24,048 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:24,051 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/
-2017-06-11 08:27:24,434 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/
-2017-06-11 08:27:24,496 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:24,497 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/201601/t9860258.htm
-2017-06-11 08:27:25,203 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/201601/t9860258.htm
-2017-06-11 08:27:25,329 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:25,332 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/201703/t10924290.htm
-2017-06-11 08:27:26,337 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/jgsfcx/cjwtjd/201703/t10924290.htm
-2017-06-11 08:27:26,620 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:26,623 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201112/t9795244.htm
-2017-06-11 08:27:27,253 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201112/t9795244.htm
-2017-06-11 08:27:27,371 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:27,373 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201504/t9795243.htm
-2017-06-11 08:27:28,169 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201504/t9795243.htm
-2017-06-11 08:27:28,284 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:28,286 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201512/t9817332.htm
-2017-06-11 08:27:29,098 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/cxfw/zgzzcx/201512/t9817332.htm
-2017-06-11 08:27:29,228 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:29,231 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201706/t11044752.htm
-2017-06-11 08:27:29,931 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201706/t11044752.htm
-2017-06-11 08:27:30,147 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:30,149 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201706/t11042150.htm
-2017-06-11 08:27:30,847 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201706/t11042150.htm
-2017-06-11 08:27:30,964 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:30,967 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201705/t11018053.htm
-2017-06-11 08:27:31,711 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201705/t11018053.htm
-2017-06-11 08:27:31,922 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:31,925 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201705/t10999016.htm
-2017-06-11 08:27:32,630 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/tpxw/201705/t10999016.htm
-2017-06-11 08:27:32,943 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:32,945 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11051090.htm
-2017-06-11 08:27:33,547 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11051090.htm
-2017-06-11 08:27:33,672 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:33,674 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/index/fwcn/201512/t9800235.htm
-2017-06-11 08:27:34,915 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/index/fwcn/201512/t9800235.htm
-2017-06-11 08:27:35,177 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:35,180 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201704/t10966638.htm
-2017-06-11 08:27:36,273 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201704/t10966638.htm
-2017-06-11 08:27:36,384 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:36,386 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201703/t10923784.htm
-2017-06-11 08:27:37,091 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201703/t10923784.htm
-2017-06-11 08:27:37,222 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:37,226 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201703/t10903310.htm
-2017-06-11 08:27:37,882 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201703/t10903310.htm
-2017-06-11 08:27:37,993 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:37,995 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/201702/t10840858.htm
-2017-06-11 08:27:38,651 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/201702/t10840858.htm
-2017-06-11 08:27:38,776 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:38,778 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201701/t10812660.htm
-2017-06-11 08:27:39,485 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/qtwj/201701/t10812660.htm
-2017-06-11 08:27:39,620 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:39,622 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/201702/t10851619.htm
-2017-06-11 08:27:40,301 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/201702/t10851619.htm
-2017-06-11 08:27:41,053 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:41,055 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/
-2017-06-11 08:27:41,420 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/
-2017-06-11 08:27:41,477 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:41,483 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11050372.htm
-2017-06-11 08:27:42,297 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11050372.htm
-2017-06-11 08:27:42,408 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:42,414 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11048665.htm
-2017-06-11 08:27:43,507 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11048665.htm
-2017-06-11 08:27:43,623 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:43,625 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11042633.htm
-2017-06-11 08:27:44,271 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201706/t11042633.htm
-2017-06-11 08:27:44,388 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:44,390 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201705/t11040333.htm
-2017-06-11 08:27:45,054 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201705/t11040333.htm
-2017-06-11 08:27:45,175 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:45,177 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/tztg/201705/t11039349.htm
-2017-06-11 08:27:45,783 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/tztg/201705/t11039349.htm
-2017-06-11 08:27:45,997 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:45,999 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/201706/t11042725.htm
-2017-06-11 08:27:46,925 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/201706/t11042725.htm
-2017-06-11 08:27:47,039 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:47,040 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/201706/t11042150.htm
-2017-06-11 08:27:47,745 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/201706/t11042150.htm
-2017-06-11 08:27:47,868 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:47,871 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/201705/t11039382.htm
-2017-06-11 08:27:48,494 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/201705/t11039382.htm
-2017-06-11 08:27:48,821 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:48,823 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/201705/t11039379.htm
-2017-06-11 08:27:49,507 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/201705/t11039379.htm
-2017-06-11 08:27:49,683 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:49,685 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/gzdt/
-2017-06-11 08:27:50,029 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/gzdt/
-2017-06-11 08:27:50,087 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:50,091 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/qtgh/201703/t10906533.htm
-2017-06-11 08:27:50,774 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/qtgh/201703/t10906533.htm
-2017-06-11 08:27:50,890 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:50,895 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/gzjh/201703/t10903692.htm
-2017-06-11 08:27:51,509 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/gzjh/201703/t10903692.htm
-2017-06-11 08:27:51,625 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:51,630 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/czys/201702/t10860190.htm
-2017-06-11 08:27:52,308 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/czys/201702/t10860190.htm
-2017-06-11 08:27:52,421 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:52,431 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/zdxm/201702/t10855021.htm
-2017-06-11 08:27:53,780 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/zdxm/201702/t10855021.htm
-2017-06-11 08:27:54,027 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:54,031 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/qtgh/201611/t10676674.htm
-2017-06-11 08:27:54,671 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/qtgh/201611/t10676674.htm
-2017-06-11 08:27:54,791 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:54,795 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/ghjh/gzjh/201612/t10751157.htm
-2017-06-11 08:27:55,420 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/ghjh/gzjh/201612/t10751157.htm
-2017-06-11 08:27:55,533 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:55,537 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057590.htm
-2017-06-11 08:27:56,232 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057590.htm
-2017-06-11 08:27:56,363 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:56,366 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057591.htm
-2017-06-11 08:27:57,078 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057591.htm
-2017-06-11 08:27:57,210 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:57,213 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057589.htm
-2017-06-11 08:27:57,978 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057589.htm
-2017-06-11 08:27:58,116 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:58,120 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057588.htm
-2017-06-11 08:27:58,731 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057588.htm
-2017-06-11 08:27:58,841 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:58,845 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057587.htm
-2017-06-11 08:27:59,472 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/zwxx/mtbd/bzwlxw/201706/t11057587.htm
-2017-06-11 08:27:59,592 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:27:59,596 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053017.htm
-2017-06-11 08:28:00,633 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053017.htm
-2017-06-11 08:28:00,745 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:28:00,747 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053016.htm
-2017-06-11 08:28:01,435 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11053016.htm
-2017-06-11 08:28:01,545 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:28:01,551 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11052433.htm
-2017-06-11 08:28:02,202 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11052433.htm
-2017-06-11 08:28:02,335 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:28:02,338 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11052472.htm
-2017-06-11 08:28:03,238 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/bsfw/gclyxmxx/201706/t11052472.htm
-2017-06-11 08:28:03,370 - govspider.py:161 - info - exceptions happended process_item the server(http://192.168.1.99:8000) response error
-2017-06-11 08:28:03,378 - govspider.py:128 - info - self mongo db closed
-2017-06-11 10:45:51,923 - govspider.py:52 - info - spider init is finished!
-2017-06-11 10:45:51,976 - govspider.py:73 - info - start crawl http://www.bjpc.gov.cn/!
-2017-06-11 10:45:51,976 - govspider.py:134 - info - start crawl url: http://www.bjpc.gov.cn/
-2017-06-11 10:45:52,119 - govspider.py:136 - info - crawled url: http://www.bjpc.gov.cn/
-2017-06-11 10:45:52,167 - govspider.py:128 - info - self mongo db closed
+2017-06-18 06:14:25,303 - govspider.py:56 - info - spider init is finished!
+2017-06-18 06:14:25,327 - govspider.py:79 - info - start crawl http://www.ndrc.gov.cn!
+2017-06-18 06:14:30,077 - govspider.py:152 - info - crawled url: http://www.ndrc.gov.cn
+2017-06-18 06:14:30,342 - govspider.py:173 - info - exceptions happended 'NoneType' object is not iterable
+2017-06-18 06:14:30,346 - govspider.py:139 - info - self mongo db closed
+2017-06-18 06:15:35,444 - govspider.py:56 - info - spider init is finished!
+2017-06-18 06:15:35,450 - govspider.py:79 - info - start crawl http://www.ndrc.gov.cn!
+2017-06-18 06:15:37,916 - govspider.py:152 - info - crawled url: http://www.ndrc.gov.cn
+2017-06-18 06:15:38,188 - govspider.py:173 - info - exceptions happended 'NoneType' object is not iterable
+2017-06-18 06:15:38,197 - govspider.py:139 - info - self mongo db closed
+2017-06-18 06:16:33,938 - govspider.py:56 - info - spider init is finished!
+2017-06-18 06:16:33,944 - govspider.py:79 - info - start crawl http://www.ndrc.gov.cn!
+2017-06-18 06:16:36,160 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn
+2017-06-18 06:16:38,394 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/
+2017-06-18 06:16:40,061 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsfb/wmh/index.html
+2017-06-18 06:16:50,707 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/fgwyd/android/fgw.apk
+2017-06-18 06:16:52,026 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsfb/wzdt/
+2017-06-18 06:16:53,419 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsfb/wmh/
+2017-06-18 06:16:54,816 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/lxwm/
+2017-06-18 06:16:56,193 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsfb/rss/
+2017-06-18 06:16:57,119 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/xwzx/xwfb/rss.xml
+2017-06-18 06:17:30,928 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/xwzx/xwfb/201706/t20170616_851049.html
+2017-06-18 06:17:31,889 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsWord/fsyjsgjc/201506/t20150608_695295.html
+2017-06-18 06:17:32,955 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsWord/fsyjsgjc/201607/t20160713_815284.html
+2017-06-18 06:17:34,154 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jsWord/fsyjsgjc/201412/t20141208_651337.html
+2017-06-18 06:17:35,722 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/zcfbtz/201706/t20170602_849811.html
+2017-06-18 06:17:36,602 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/lxwm/
+2017-06-18 06:17:38,321 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/fgwSearch/articleAnalysis.jsp
+2017-06-18 06:17:39,872 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/fgwSearch/columnAnalysis.jsp
+2017-06-18 06:17:40,945 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/
+2017-06-18 06:17:41,761 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/gfxwj/
+2017-06-18 06:17:42,498 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfbgg/
+2017-06-18 06:17:43,198 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfbghwb/
+2017-06-18 06:17:44,047 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfbtz/
+2017-06-18 06:17:44,946 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/jd/
+2017-06-18 06:17:46,202 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfbqt/
+2017-06-18 06:17:46,967 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201706/t20170612_850504.html
+2017-06-18 06:17:47,845 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201703/t20170322_841714.html
+2017-06-18 06:17:48,613 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201702/t20170217_838180.html
+2017-06-18 06:17:49,345 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201612/t20161208_829543.html
+2017-06-18 06:17:50,131 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201612/t20161202_829032.html
+2017-06-18 06:17:50,969 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201611/t20161124_827581.html
+2017-06-18 06:17:51,724 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201610/t20161009_822035.html
+2017-06-18 06:17:52,532 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201609/t20160921_819069.html
+2017-06-18 06:17:53,247 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201607/t20160720_811680.html
+2017-06-18 06:17:54,064 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201606/t20160630_809701.html
+2017-06-18 06:17:54,763 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201605/t20160519_802228.html
+2017-06-18 06:17:55,511 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201604/t20160422_798759.html
+2017-06-18 06:17:56,323 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201604/t20160405_797464.html
+2017-06-18 06:17:57,095 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201603/t20160324_795963.html
+2017-06-18 06:17:57,953 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201603/t20160308_792230.html
+2017-06-18 06:17:58,948 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201601/t20160120_771909.html
+2017-06-18 06:17:59,730 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201601/t20160114_771354.html
+2017-06-18 06:18:00,580 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201601/t20160113_771254.html
+2017-06-18 06:18:01,313 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201510/t20151020_755152.html
+2017-06-18 06:18:02,131 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/201509/t20150914_750844.html
+2017-06-18 06:18:02,966 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/index_1.html
+2017-06-18 06:18:03,804 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/index_2.html
+2017-06-18 06:18:04,561 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/zcfb/index_7.html
+2017-06-18 06:18:05,779 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../lxwm/
+2017-06-18 06:18:06,957 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../lxwm/
+2017-06-18 06:18:08,006 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../lxwm/
+2017-06-18 06:18:09,039 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../lxwm/
+2017-06-18 06:18:10,039 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../lxwm/
+2017-06-18 06:18:11,005 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../lxwm/
+2017-06-18 06:18:12,062 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../lxwm/
+2017-06-18 06:18:12,997 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../lxwm/
+2017-06-18 06:18:14,259 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../lxwm/
+2017-06-18 06:18:15,238 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../lxwm/
+2017-06-18 06:18:16,379 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../lxwm/
+2017-06-18 06:18:17,672 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:18,786 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:19,999 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:21,072 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:22,011 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:23,136 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:24,087 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:25,215 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:26,238 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:27,430 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:29,036 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:29,957 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:30,981 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:31,894 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:32,841 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:33,828 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:34,789 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:35,937 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:36,902 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:37,981 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:39,181 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:40,121 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:41,218 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:42,279 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:43,345 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:44,310 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:45,633 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:46,656 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:47,784 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:48,743 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:49,811 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:50,854 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:51,943 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:52,912 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:53,872 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:55,069 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:56,039 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:56,971 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:58,249 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:18:59,359 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:00,403 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:01,394 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:02,348 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:03,431 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:04,337 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:05,365 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:06,588 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:07,580 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:08,472 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:09,571 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:10,671 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:11,845 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:12,915 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:14,192 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:15,443 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:16,623 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:17,648 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:18,595 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:19,505 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:20,492 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:21,662 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:22,713 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:23,767 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:24,814 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:25,884 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:26,965 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:27,874 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:28,874 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:30,007 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:31,120 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:32,144 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:34,219 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:35,239 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:36,203 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:37,278 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:38,363 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:41,255 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:42,381 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:43,606 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:44,924 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:46,026 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:46,958 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:47,921 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:48,870 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:50,014 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:51,024 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:51,954 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:53,131 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:54,235 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/
+2017-06-18 06:19:55,739 - govspider.py:149 - info - crawled url: http://www.ndrc.gov.cn/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lxwm/

@@ -59,6 +59,6 @@ class Pipeline(object):
             #    t.close()
             r = requests.post(url, data = json.dumps(jsn, ensure_ascii=False), headers = headers)  #will stuck here a little, need improving
         except Exception, e:
-            raise DropItem("process_item the server(%s) response error" % self.server_uri)
+            logger.warning("process_item the server(%s) response error" % self.server_uri)
             
 

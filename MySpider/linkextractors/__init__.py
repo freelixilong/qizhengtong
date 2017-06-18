@@ -21,9 +21,6 @@ class MyLxmlParserLinkExtractor(LxmlParserLinkExtractor):
             except ValueError:
                 continue
             else:
-                if base_url == "http://www.bjpc.gov.cn/zwxx/zcfg/xcwj/zcwj/":
-                   pdb.set_trace() 
-                end
                 url = self.process_attr(attr_val)
                 if url is None:
                     continue
