@@ -54,9 +54,9 @@ class Pipeline(object):
             #logger.warning('process_item title %s' % item["title"])
             pdb.set_trace()
             logger.warning('process_item post: %s' % json.dumps(jsn, ensure_ascii=False))
-            #with open("item.json", 'a+') as t:
-            #    t.write(json.dumps(jsn, ensure_ascii=False) + "\n")
-            #    t.close()
+            with open("item.json", 'a+') as t:
+                t.write(json.dumps(jsn, ensure_ascii=False) + "\n")
+                t.close()
             r = requests.post(url, data = json.dumps(jsn, ensure_ascii=False), headers = headers)  #will stuck here a little, need improving
         except Exception, e:
             logger.warning("process_item the server(%s) response error" % self.server_uri)
