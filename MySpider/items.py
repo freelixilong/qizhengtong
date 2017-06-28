@@ -17,14 +17,14 @@ logger = logging.getLogger(__name__)
 class PageContentItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    depart = scrapy.Field() #bu men, gov 
+    depart = scrapy.Field() #bu men, gov
     section = scrapy.Field() # bankuai
     title = scrapy.Field() #
     link = scrapy.Field()
     date = scrapy.Field()
     optionFields =  scrapy.Field()
-    #append = scrapy.Field() #fujian mulu 
-   
+    #append = scrapy.Field() #fujian mulu
+
 class PageItemLoader(ItemLoader):
     def __init__(self, item=None, selector=None, response=None, parent=None, **context):
         #response.text = response.text.decode("utf-8")
@@ -34,7 +34,7 @@ class PageItemLoader(ItemLoader):
     def load_item(self):
         item = self.item
         item["optionFields"] = {}
-        
+
         for field_name in tuple(self._values):
             value = self.get_output_value(field_name)
             #if field_name == "link":
@@ -51,9 +51,9 @@ class PageItemLoader(ItemLoader):
                 except Exception, e:
                     item["optionFields"][field_name] = value
 
-                
+
         #pdb.set_trace()
-        
+
         return item
     def _get_item_field_attr(self, field_name, key, default=None):
         try:
@@ -63,4 +63,3 @@ class PageItemLoader(ItemLoader):
             value = default
         finally:
             return value
-       

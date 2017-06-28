@@ -2,7 +2,10 @@
 import re
 import logging
 import six
-
+import copy
+import pymongo
+import json
+import re
 #import scrapy,random
 from items import PageContentItem
 from items import PageItemLoader
@@ -23,8 +26,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pipelines import Pipeline
-import copy
-import pymongo
+
 import pdb
 from logger import getLogger
 
@@ -141,31 +143,43 @@ class GovSpider():
         print "get newUrl %s"%newUrl
         self.currentUrl = url
         browser.get(newUrl)
+    def noError(self, browser):
+        try:
+            res = re.search("(\.\.\/){4,}", self.currentUrl)
+            if not res is None:
+                return False
+            t = browser.find_element_by_xpath("/html/body/pre").text
+            dic = json.loads(t)
+            ex = dic["error"]
 
+            if ex == 502 or ex == 404 or ex == 500:
+                return False
+        except Exception, e:
+            return True
+        return True
+    def getResponse(self, url, browser):
+        res = TextResponse(url,body=browser.page_source.encode("utf-8"))
+        return res
     def request(self, url):
         try:
             #logger.info("start crawl url: %s"%url)
             self._getPage(url, self.browser)
             logger.info("crawled url: %s"%url)
             self.crawedAppend(url)
-            res = TextResponse(url,body=self.browser.page_source.encode("utf-8"))
-            site_urls = self.link_extractor.extract_links(res)
-            site_urls = self.add_urls_noduplicate(site_urls)
-            #with open("temp.html", 'w') as t:
-            #    t.write(self.browser.page_source.encode("utf-8"))
-            #    t.close()
-            if self.satisfy_craw(res):
-                item =  self.get_item(res)
-                self.save_item(item)
-            nextXpath = self.get_next_page_xpath(self.browser)
+            if self.noError(self.browser):
+                res = self.getResponse(url, self.browser)
+                site_urls = self.link_extractor.extract_links(res)
+                site_urls = self.add_urls_noduplicate(site_urls)
+                if self.satisfy_craw(res):
+                    item =  self.get_item(res)
+                    self.save_item(item)
+                nextXpath = self.get_next_page_xpath(self.browser)
 
-            #if nextXpath:
-            #    self.craw_next_pages(nextXpath, site_urls)
-
-            for url in site_urls:
-                if not self.hasCrawedUrl(url):
-                    self.request(url) ##once come here, the browser is dirty data
-
+                #if nextXpath:
+                #    self.craw_next_pages(nextXpath, site_urls)
+                for url in site_urls:
+                    if not self.hasCrawedUrl(url):
+                        self.request(url) ##once come here, the browser is dirty data
         except Exception as e:
             logger.warning('exceptions happended %s'%e.message)
         else:
@@ -190,21 +204,24 @@ class GovSpider():
             tempBrowser = webdriver.Firefox()
 
             while self.browser.find_element_by_xpath(nextXpath):
-                res = TextResponse(self.currentUrl,body=self.browser.page_source.encode("utf-8"))
+                res =self.getResponse(self.currentUrl, self.browser)
                 self.crawedAppend(self.currentUrl)
                 site_urls = self.link_extractor.extract_links(res)
                 site_urls = self.add_urls_noduplicate(site_urls)
                 for url in site_urls:
                     self._getPage(url, tempBrowser)
-                    logger.info("crawled n url: %s"%url)
-                    #self.crawedAppend(url)
-                    res = TextResponse(url,body=tempBrowser.page_source.encode("utf-8"))
-                    if self.satisfy_craw(res):
-                        self.crawedAppend(url)
-                        item =  self.get_item(res)
-                        self.save_item(item)
-                    else:
-                        self._add_url_nodup(url, dstArr)
+                    if self.noError(self, tempBrowser):
+                        logger.info("crawled n url: %s"%url)
+                        #self.crawedAppend(url)
+                        res =self.getResponse(url, tempBrowser)
+                        self.browser
+                        if self.satisfy_craw(res):
+                            self.crawedAppend(url)
+                            item =  self.get_item(res)
+                            self.save_item(item)
+                        else:
+                            self._add_url_nodup(url, dstArr)
+
                 self.browser.find_element_by_xpath(nextXpath).click()
                 nextElement = wait_for_next_element(nextXpath)
                 WebDriverWait(self.browser, 10).until(EC.element_to_be_clickable((By.XPATH, nextXpath)))
