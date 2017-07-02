@@ -27,9 +27,7 @@ def get_firefox_profile():
 
 if __name__ == '__main__':
     print 'START'
-#定义一个火狐浏览器对象
 #from pyvirtualdisplay import Display
-
     #profile = webdriver.FirefoxProfile()
     #profile.set_preference("browser.startup.homepage", "about:blank")
     #profile.set_preference("startup.homepage_welcome_url", "about:blank")
