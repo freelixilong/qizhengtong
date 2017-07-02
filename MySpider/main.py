@@ -1,20 +1,20 @@
 #coding:utf-8
 #
 from selenium import webdriver
-from  spiders import GovSpider
+from  spiders import CommSpider
 from pyvirtualdisplay import Display
 import os
 import sys
 import settings
+import pymongo
 from scrapy.settings import  Settings
 import pdb
 
-
 def get_project_settings():
-
     settings = Settings()
     settings.setmodule("settings", priority='project')
     return settings
+
 def get_firefox_profile():
     profile = webdriver.FirefoxProfile()
     profile.set_preference('network.proxy.type', 1)#默认是0，就是直接连接；1就是手工配置代理
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     browser = webdriver.Firefox()
     try:
         setting = get_project_settings()
-        spider = GovSpider(browser, setting)
+        spider = CommSpider(browser, setting)
         argc = len(sys.argv)
         print "get argc %d"%argc
         if argc == 3:
@@ -54,7 +54,11 @@ if __name__ == '__main__':
             print "start crawl from %s"%startUrl
             spider.start_once(site= site, startUrl = startUrl)
         else:
-            spider.start()
+            client = pymongo.MongoClient(setting.get('MONGO_URI'))
+            db = client[setting.get('MONGO_DATABASE', 'test')]
+            reses = db.GovDepartment.find({"key": {"$ne":""}})
+            for res in reses:
+                spider.start(res["key"], startUrl =res["link"])
     except Exception as e:
         print "%s: %s"%("main.py", e.message)
 
