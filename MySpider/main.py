@@ -1,13 +1,14 @@
 #coding:utf-8
 #
 from selenium import webdriver
-from  spiders import CommSpider
 from pyvirtualdisplay import Display
 import os
 import sys
 import settings
 import pymongo
 from scrapy.settings import  Settings
+from  spiders import CommSpider
+from  spiders import ActionSpider
 import pdb
 
 def get_project_settings():
@@ -43,7 +44,6 @@ if __name__ == '__main__':
     browser = webdriver.Firefox()
     try:
         setting = get_project_settings()
-        spider = CommSpider(browser, setting)
         argc = len(sys.argv)
         print "get argc %d"%argc
         if argc == 3:
@@ -56,6 +56,8 @@ if __name__ == '__main__':
             db = client[setting.get('MONGO_DATABASE', 'test')]
             reses = db.GovDepartment.find({"key": {"$ne":""}})
             for res in reses:
+                #spider = CommSpider(browser, setting)
+                spider = ActionSpider(browser, setting)
                 spider.start(res["key"], startUrl =res["link"])
     except Exception as e:
         print "%s: %s"%("main.py", e.message)

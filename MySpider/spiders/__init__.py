@@ -28,6 +28,7 @@ class BaseSpider(object):
         self.deny = True
         self.clawed_urls = []
         self.site_urls = []
+        self.currentUrl = ""
         self.started = False
         self.pipeline = Pipeline(self.settings.get('MYSERVER_URI'))
         self.proxyUrl = self.settings.get("SPLASH_URL")
@@ -97,6 +98,12 @@ class BaseSpider(object):
     def getResponse(self, url, browser):
         res = TextResponse(url,body=browser.page_source.encode("utf-8"))
         return res
+    def _getPage(self, url, browser):
+        newUrl = "%s%s%s%s"%(self.proxyUrl, "?url=", url, "&timeout=10&wait=0.5")
+        print "get newUrl %s"%newUrl
+        self.currentUrl = url
+        browser.get(newUrl)
+
     def request(self, url):
         pass
 
@@ -140,3 +147,4 @@ class BaseSpider(object):
             dstArr.append(url)
 
 from .govspider import CommSpider
+from .govspider import ActionSpider

@@ -3075,3 +3075,409 @@
 2017-07-02 12:24:56,182 - govspider.py:78 - info - crawled url: http://www.ccgp-hebei.gov.cn/
 2017-07-02 12:24:56,350 - __init__.py:94 - info - self mongo db closed
 2017-07-02 12:24:56,350 - __init__.py:94 - info - self mongo db closed
+2017-07-08 07:06:56,363 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:06:56,363 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:06:56,373 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:06:56,373 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:06:57,649 - govspider.py:187 - info - craw_next_pages failed hasCrawedUrl() takes exactly 2 arguments (3 given)
+2017-07-08 07:06:57,649 - govspider.py:187 - info - craw_next_pages failed hasCrawedUrl() takes exactly 2 arguments (3 given)
+2017-07-08 07:06:57,651 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:06:57,651 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:06:57,658 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:06:57,658 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:10:01,998 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:10:01,998 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:10:02,006 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:10:02,006 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:10:03,237 - govspider.py:187 - info - craw_next_pages failed hasCrawedUrl() takes exactly 2 arguments (3 given)
+2017-07-08 07:10:03,237 - govspider.py:187 - info - craw_next_pages failed hasCrawedUrl() takes exactly 2 arguments (3 given)
+2017-07-08 07:10:03,243 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:10:03,243 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:10:03,248 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:10:03,248 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:13:28,765 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:13:28,765 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:13:28,772 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:13:28,772 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:13:29,982 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:13:29,982 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:13:30,208 - govspider.py:187 - info - craw_next_pages failed 
+2017-07-08 07:13:30,208 - govspider.py:187 - info - craw_next_pages failed 
+2017-07-08 07:13:30,213 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:13:30,213 - govspider.py:188 - info - craw_next_pages may not have next page any more!
+2017-07-08 07:13:30,220 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:13:30,220 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:15:37,531 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:15:37,531 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:15:37,539 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:15:37,539 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:15:38,830 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:15:38,830 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:15:39,136 - govspider.py:187 - info - Action spider request failed 
+2017-07-08 07:15:39,136 - govspider.py:187 - info - Action spider request failed 
+2017-07-08 07:15:39,143 - govspider.py:188 - info - sub page may not have page anymore!
+2017-07-08 07:15:39,143 - govspider.py:188 - info - sub page may not have page anymore!
+2017-07-08 07:15:39,152 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:15:39,152 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:16:39,867 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:16:39,867 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:16:39,876 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:16:39,876 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:16:40,991 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:16:40,991 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:19:38,464 - govspider.py:188 - info - Action spider request failed 
+2017-07-08 07:19:38,464 - govspider.py:188 - info - Action spider request failed 
+2017-07-08 07:19:38,474 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:19:38,474 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:19:38,478 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:19:38,478 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:19:43,704 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:19:43,704 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:19:43,710 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:19:43,710 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:19:50,206 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:19:50,206 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:19:50,387 - govspider.py:188 - info - Action spider request failed 'WebElement' object is not iterable
+2017-07-08 07:19:50,387 - govspider.py:188 - info - Action spider request failed 'WebElement' object is not iterable
+2017-07-08 07:19:50,394 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:19:50,394 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:19:50,396 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:19:50,396 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:20:21,470 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:20:21,470 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:20:21,479 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:20:21,479 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:20:22,628 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:20:22,628 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:21:12,810 - govspider.py:188 - info - Action spider request failed 'WebElement' object is not iterable
+2017-07-08 07:21:12,810 - govspider.py:188 - info - Action spider request failed 'WebElement' object is not iterable
+2017-07-08 07:21:15,781 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:21:15,781 - govspider.py:189 - info - sub page may not have page anymore!
+2017-07-08 07:21:18,168 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:21:18,168 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:29:52,317 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:29:52,317 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:29:52,328 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:29:52,328 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:29:53,523 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:29:53,523 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:31:22,682 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:31:22,682 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:38:06,401 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:38:06,401 - __init__.py:35 - info - spider init is finished!
+2017-07-08 07:38:06,413 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:38:06,413 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 07:38:07,693 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:38:07,693 - govspider.py:178 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 07:41:51,316 - __init__.py:95 - info - self mongo db closed
+2017-07-08 07:41:51,316 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:18:43,097 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:18:43,097 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:18:43,112 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:18:43,112 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:18:44,339 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:18:44,339 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:18:51,540 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:18:51,540 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:18:51,556 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:18:51,556 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:18:51,569 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:18:51,569 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:20:39,444 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:20:39,444 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:20:39,455 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:20:39,455 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:20:40,948 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:20:40,948 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:20:49,553 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:20:49,553 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:20:49,582 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:20:49,582 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:20:49,588 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:20:49,588 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:21:44,953 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:21:44,953 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:21:44,960 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:21:44,960 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:21:46,221 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:21:46,221 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:23:01,724 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:23:01,724 - govspider.py:190 - info - Action spider request failed 'ActionSpider' object has no attribute 'driver'
+2017-07-08 08:23:01,736 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:23:01,736 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-08 08:23:01,746 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:23:01,746 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:24:46,887 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:24:46,887 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:24:46,897 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:24:46,897 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:24:48,101 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:24:48,101 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:25:15,878 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:25:15,878 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:34:12,541 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:34:12,541 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:34:12,552 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:34:12,552 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:34:13,727 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:34:13,727 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:34:53,271 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:34:53,271 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:35:16,995 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:35:16,995 - __init__.py:35 - info - spider init is finished!
+2017-07-08 08:35:17,004 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:35:17,004 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 08:35:18,132 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:35:18,132 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 08:39:50,467 - __init__.py:95 - info - self mongo db closed
+2017-07-08 08:39:50,467 - __init__.py:95 - info - self mongo db closed
+2017-07-08 10:51:46,023 - __init__.py:35 - info - spider init is finished!
+2017-07-08 10:51:46,023 - __init__.py:35 - info - spider init is finished!
+2017-07-08 10:51:46,033 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 10:51:46,033 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 10:51:47,287 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 10:51:47,287 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 10:52:57,703 - __init__.py:95 - info - self mongo db closed
+2017-07-08 10:52:57,703 - __init__.py:95 - info - self mongo db closed
+2017-07-08 10:53:04,901 - __init__.py:35 - info - spider init is finished!
+2017-07-08 10:53:04,901 - __init__.py:35 - info - spider init is finished!
+2017-07-08 10:53:04,911 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 10:53:04,911 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 10:53:06,431 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 10:53:06,431 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 11:01:31,314 - __init__.py:95 - info - self mongo db closed
+2017-07-08 11:01:31,314 - __init__.py:95 - info - self mongo db closed
+2017-07-08 11:02:25,883 - __init__.py:35 - info - spider init is finished!
+2017-07-08 11:02:25,883 - __init__.py:35 - info - spider init is finished!
+2017-07-08 11:02:25,892 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 11:02:25,892 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-08 11:02:27,132 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 11:02:27,132 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-08 11:02:58,697 - __init__.py:95 - info - self mongo db closed
+2017-07-08 11:02:58,697 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:51:47,570 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:51:47,570 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:51:47,578 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:51:47,578 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:51:48,803 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:51:48,803 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:51:49,325 - govspider.py:190 - info - Action spider request failed local variable 'element' referenced before assignment
+2017-07-09 01:51:49,325 - govspider.py:190 - info - Action spider request failed local variable 'element' referenced before assignment
+2017-07-09 01:51:49,329 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-09 01:51:49,329 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-09 01:51:49,331 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:51:49,331 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:52:24,940 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:52:24,940 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:52:24,945 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:52:24,945 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:52:31,221 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:52:31,221 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:54:02,834 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:54:02,834 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:54:31,319 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:54:31,319 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:54:31,325 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:54:31,325 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:54:39,293 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:54:39,293 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:55:10,148 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:55:10,148 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:57:07,691 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:57:07,691 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:57:07,694 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:57:07,694 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:57:12,199 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:57:12,199 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:57:33,070 - govspider.py:190 - info - Action spider request failed global name 'sleep' is not defined
+2017-07-09 01:57:33,070 - govspider.py:190 - info - Action spider request failed global name 'sleep' is not defined
+2017-07-09 01:57:33,079 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-09 01:57:33,079 - govspider.py:191 - info - sub page may not have page anymore!
+2017-07-09 01:57:33,085 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:57:33,085 - __init__.py:95 - info - self mongo db closed
+2017-07-09 01:58:10,606 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:58:10,606 - __init__.py:35 - info - spider init is finished!
+2017-07-09 01:58:10,612 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:58:10,612 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 01:58:11,872 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 01:58:11,872 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 02:00:37,503 - __init__.py:95 - info - self mongo db closed
+2017-07-09 02:00:37,503 - __init__.py:95 - info - self mongo db closed
+2017-07-09 03:36:14,463 - __init__.py:35 - info - spider init is finished!
+2017-07-09 03:36:14,463 - __init__.py:35 - info - spider init is finished!
+2017-07-09 03:36:14,471 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 03:36:14,471 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 03:36:15,682 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 03:36:15,682 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 03:37:21,460 - __init__.py:95 - info - self mongo db closed
+2017-07-09 03:37:21,460 - __init__.py:95 - info - self mongo db closed
+2017-07-09 03:41:24,902 - __init__.py:35 - info - spider init is finished!
+2017-07-09 03:41:24,902 - __init__.py:35 - info - spider init is finished!
+2017-07-09 03:41:24,909 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 03:41:24,909 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 03:41:31,372 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 03:41:31,372 - govspider.py:180 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 03:49:09,556 - __init__.py:95 - info - self mongo db closed
+2017-07-09 03:49:09,556 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:07:23,433 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:07:23,433 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:07:23,440 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:07:23,440 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:07:23,442 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:07:23,442 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:07:46,556 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:07:46,556 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:07:46,560 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:07:46,560 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:07:52,226 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 04:07:52,226 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 04:09:16,100 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:09:16,100 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:10:03,315 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:10:03,315 - __init__.py:35 - info - spider init is finished!
+2017-07-09 04:10:03,321 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:10:03,321 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 04:10:03,886 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 04:10:03,886 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 04:11:53,882 - __init__.py:95 - info - self mongo db closed
+2017-07-09 04:11:53,882 - __init__.py:95 - info - self mongo db closed
+2017-07-09 05:04:13,905 - __init__.py:35 - info - spider init is finished!
+2017-07-09 05:04:13,905 - __init__.py:35 - info - spider init is finished!
+2017-07-09 05:04:13,911 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 05:04:13,911 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 05:04:14,643 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 05:04:14,643 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 05:24:38,670 - govspider.py:195 - info - Action spider request failed 'unicode' object has no attribute 'get'
+2017-07-09 05:24:38,670 - govspider.py:195 - info - Action spider request failed 'unicode' object has no attribute 'get'
+2017-07-09 05:24:38,709 - govspider.py:196 - info - sub page may not have page anymore!
+2017-07-09 05:24:38,709 - govspider.py:196 - info - sub page may not have page anymore!
+2017-07-09 05:24:38,762 - __init__.py:95 - info - self mongo db closed
+2017-07-09 05:24:38,762 - __init__.py:95 - info - self mongo db closed
+2017-07-09 09:47:48,790 - __init__.py:35 - info - spider init is finished!
+2017-07-09 09:47:48,790 - __init__.py:35 - info - spider init is finished!
+2017-07-09 09:47:48,803 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 09:47:48,803 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 09:47:49,552 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 09:47:49,552 - govspider.py:185 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 10:40:28,397 - __init__.py:95 - info - self mongo db closed
+2017-07-09 10:40:28,397 - __init__.py:95 - info - self mongo db closed
+2017-07-09 11:25:07,977 - __init__.py:35 - info - spider init is finished!
+2017-07-09 11:25:07,977 - __init__.py:35 - info - spider init is finished!
+2017-07-09 11:25:07,988 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 11:25:07,988 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 11:25:08,583 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 11:25:08,583 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 11:27:16,049 - __init__.py:95 - info - self mongo db closed
+2017-07-09 11:27:16,049 - __init__.py:95 - info - self mongo db closed
+2017-07-09 11:29:27,070 - __init__.py:35 - info - spider init is finished!
+2017-07-09 11:29:27,070 - __init__.py:35 - info - spider init is finished!
+2017-07-09 11:29:27,080 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 11:29:27,080 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 11:30:07,267 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 11:30:07,267 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:37:00,599 - govspider.py:196 - info - Action spider request failed 'NoneType' object has no attribute 'get'
+2017-07-09 12:37:00,599 - govspider.py:196 - info - Action spider request failed 'NoneType' object has no attribute 'get'
+2017-07-09 12:37:00,607 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:37:00,607 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:37:00,611 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:37:00,611 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:40:45,773 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:40:45,773 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:40:45,780 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:40:45,780 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:40:46,483 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:40:46,483 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:43:06,339 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:43:06,339 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:43:21,407 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:43:21,407 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:43:21,415 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:43:21,415 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:43:21,989 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:43:21,989 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:46:15,159 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:46:15,159 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:47:02,520 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:47:02,520 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:47:02,527 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:47:02,527 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:47:03,082 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:47:03,082 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:47:04,039 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:47:04,039 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:47:04,043 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:47:04,043 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:47:04,044 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:47:04,044 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:47:19,454 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:47:19,454 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:47:19,463 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:47:19,463 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:47:19,977 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:47:19,977 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:47:21,429 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:47:21,429 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:47:21,433 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:47:21,433 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:47:21,436 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:47:21,436 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:49:15,287 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:49:15,287 - __init__.py:35 - info - spider init is finished!
+2017-07-09 12:49:15,299 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:49:15,299 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 12:49:15,845 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:49:15,845 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 12:49:16,880 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:49:16,880 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 12:49:16,884 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:49:16,884 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 12:49:16,884 - __init__.py:95 - info - self mongo db closed
+2017-07-09 12:49:16,884 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:04:30,983 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:04:30,983 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:04:30,990 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:04:30,990 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:04:31,623 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:04:31,623 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:04:32,906 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:04:32,906 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:04:32,910 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:04:32,910 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:04:32,911 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:04:32,911 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:06:29,306 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:06:29,306 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:06:29,315 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:06:29,315 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:06:30,013 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:06:30,013 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:06:31,419 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:06:31,419 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:06:31,422 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:06:31,422 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:06:31,422 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:06:31,422 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:07:54,819 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:07:54,819 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:07:54,827 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:07:54,827 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:07:55,358 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:07:55,358 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:07:56,723 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:07:56,723 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:07:56,727 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:07:56,727 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:07:56,727 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:07:56,727 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:08:42,290 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:08:42,290 - __init__.py:35 - info - spider init is finished!
+2017-07-09 13:08:42,296 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:08:42,296 - __init__.py:44 - info - start crawl http://www.ccgp-hebei.gov.cn!
+2017-07-09 13:08:42,842 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:08:42,842 - govspider.py:186 - info - crawled url: http://www.ccgp-hebei.gov.cn
+2017-07-09 13:08:43,984 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:08:43,984 - govspider.py:196 - info - Action spider request failed local variable 'pdb' referenced before assignment
+2017-07-09 13:08:43,988 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:08:43,988 - govspider.py:197 - info - sub page may not have page anymore!
+2017-07-09 13:08:43,988 - __init__.py:95 - info - self mongo db closed
+2017-07-09 13:08:43,988 - __init__.py:95 - info - self mongo db closed
